@@ -313,10 +313,10 @@ btnUpload.addEventListener('click', async () => {
     try {
         for (const file of files) {
             const formData = new FormData();
-            formData.append('audio', file);
+            formData.append('file', file);
             formData.append('lang', uploadLang.value);
 
-            const resp = await fetch('/transcribe', {
+            const resp = await fetch('/speech-to-text', {
                 method: 'POST',
                 body: formData
             });
@@ -340,7 +340,22 @@ btnUpload.addEventListener('click', async () => {
         showAlert('Archivos procesados correctamente', 'success');
     } catch (err) {
         console.error('Error al procesar archivos:', err);
-        showAlert('Error al procesar los archivos', 'danger');
+        let errorMsg = 'Error al procesar los archivos';
+        
+        // Intentar obtener más detalles del error
+        if (err.message) {
+            errorMsg += ': ' + err.message;
+        }
+        
+        // Si hay una sugerencia del servidor (como instalar ffmpeg)
+        try {
+            const data = JSON.parse(err.message);
+            if (data.suggestion) {
+                errorMsg += '\n' + data.suggestion;
+            }
+        } catch (e) {}
+        
+        showAlert(errorMsg, 'danger');
     } finally {
         btnUpload.disabled = false;
         btnUpload.innerHTML = originalBtnText;
