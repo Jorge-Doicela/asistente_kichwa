@@ -307,9 +307,71 @@ def api_delete_upload(filename):
     return jsonify({'ok': True})
 
 
-@app.route('/admin')
-def admin_page():
-    return render_template('admin.html')
+@app.route('/diccionario')
+def diccionario_page():
+    return render_template('diccionario.html')
+
+# Importaciones para el diccionario
+import json
+
+@app.route('/api/dictionary/add', methods=['POST'])
+def api_dictionary_add():
+    try:
+        data = request.get_json()
+        spanish = data.get('spanish', '').strip().lower()
+        kichwa = data.get('kichwa', '').strip()
+        
+        if not spanish or not kichwa:
+            return jsonify({'error': 'Faltan datos'}), 400
+            
+        # Cargar diccionario actual
+        dict_path = os.path.join('data', 'dictionary_es_qu.json')
+        dic = {}
+        if os.path.exists(dict_path):
+            with open(dict_path, 'r', encoding='utf-8') as f:
+                dic = json.load(f)
+                
+        # Agregar nueva palabra
+        dic[spanish] = kichwa
+        
+        # Guardar diccionario
+        with open(dict_path, 'w', encoding='utf-8') as f:
+            json.dump(dic, f, ensure_ascii=False, indent=2)
+            
+        return jsonify({'ok': True})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/dictionary/delete', methods=['POST'])
+def api_dictionary_delete():
+    try:
+        data = request.get_json()
+        spanish = data.get('spanish', '').strip().lower()
+        
+        if not spanish:
+            return jsonify({'error': 'Palabra no especificada'}), 400
+            
+        # Cargar diccionario actual
+        dict_path = os.path.join('data', 'dictionary_es_qu.json')
+        if not os.path.exists(dict_path):
+            return jsonify({'error': 'Diccionario no encontrado'}), 404
+            
+        with open(dict_path, 'r', encoding='utf-8') as f:
+            dic = json.load(f)
+            
+        # Eliminar palabra si existe
+        if spanish in dic:
+            del dic[spanish]
+            
+            # Guardar diccionario actualizado
+            with open(dict_path, 'w', encoding='utf-8') as f:
+                json.dump(dic, f, ensure_ascii=False, indent=2)
+            
+            return jsonify({'ok': True})
+        else:
+            return jsonify({'error': 'Palabra no encontrada'}), 404
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 

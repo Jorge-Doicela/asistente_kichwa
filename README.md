@@ -1,49 +1,127 @@
-# Asistente Kichwa
+# Asistente de Traducción Kichwa-Español
 
-Estructura mínima de la aplicación web con Flask.
+Aplicación web interactiva para traducción bidireccional entre Kichwa y Español, con soporte para entrada por voz, texto y archivos de audio.
 
-Requisitos
+![Vista previa de la aplicación](./static/img/preview.png)
 
-- Python 3.8+
-- Las dependencias aparecen en `requirements.txt`.
+## 🌟 Características Principales
 
-Instalación y uso (PowerShell)
+- **Traducción Bidireccional**
+  - Traducción instantánea Kichwa ↔ Español
+  - Diccionario local incorporado
+  - Sistema de traducción fallback
 
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
+- **Múltiples Métodos de Entrada**
+  - 🎤 Grabación de voz en tiempo real
+  - ⌨️ Entrada de texto manual
+  - 📁 Subida de archivos de audio
+
+- **Funciones Avanzadas**
+  - 🔊 Síntesis de voz (TTS) para escuchar traducciones
+  - 💾 Almacenamiento y gestión de archivos de audio
+  - 📊 Panel de administración con estadísticas
+  - 📚 Importación/exportación de diccionario
+
+## 🛠️ Requisitos
+
+- Python 3.8 o superior
+- Navegador web moderno con soporte para:
+  - Web Speech API
+  - MediaRecorder API
+  - Web Audio API
+- Micrófono (para funciones de voz)
+
+## 📦 Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/Jorge-Doicela/asistente_kichwa.git
+   cd asistente_kichwa
+   ```
+
+2. **Crear entorno virtual**
+   ```powershell
+   # Windows
+   python -m venv venv
+   .\venv\Scripts\activate
+
+   # Linux/macOS
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Instalar dependencias**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Ejecutar la aplicación**
+   ```bash
+   python app.py
+   ```
+
+5. **Acceder a la aplicación**
+   - Abre http://127.0.0.1:5000 en tu navegador
+
+## 💡 Guía de Uso
+
+### Traducción por Voz
+1. Selecciona el idioma de entrada (Español/Kichwa)
+2. Mantén presionado el botón de grabación
+3. Habla claramente al micrófono
+4. Suelta el botón para procesar
+5. La traducción aparecerá automáticamente
+
+### Traducción de Texto
+1. Escribe o pega el texto en el área de entrada
+2. Selecciona el idioma de origen
+3. Haz clic en "Traducir" o presiona Enter
+4. Usa el botón 🔊 para escuchar la traducción
+
+### Procesamiento de Audio
+1. Selecciona el archivo(s) de audio
+2. Elige el idioma del audio
+3. Haz clic en "Subir y Procesar"
+4. Espera la traducción automática
+
+## ⚙️ API REST
+
+### Endpoints Principales
+
+#### POST /translate
+Traduce texto entre Kichwa y Español.
+```json
+{
+  "text": "Texto a traducir",
+  "src": "es",
+  "dest": "qu"
+}
 ```
 
-Abre http://127.0.0.1:5000 en tu navegador.
-
-Probando el endpoint /speak
-
-1. Inicia la aplicación:
-
-```powershell
-python app.py
+#### POST /transcribe
+Procesa archivos de audio y extrae texto.
+```json
+{
+  "audio": "archivo_audio.mp3",
+  "lang": "es"
+}
 ```
 
-2. En la interfaz principal escribe texto y pulsa "Generar audio". El frontend hará POST a `/speak` y reproducirá el MP3 devuelto.
-
-3. También puedes probar con curl (PowerShell):
-
-```powershell
-curl -Method POST -ContentType 'application/json' -Body '{"text":"Hola desde Kichwa"}' http://127.0.0.1:5000/speak
+#### POST /text-to-speech
+Genera audio a partir de texto.
+```json
+{
+  "text": "Texto para generar audio",
+  "lang": "qu"
+}
 ```
 
-Esto devolverá un JSON con la clave `url`, p. ej. { "url": "/static/audio/abcd1234.mp3" }.
+## ✨ Créditos
 
-Notas
+Desarrollado por Jorge Doicela.
 
-- El servidor usa `gTTS` para generar el MP3. `gTTS` debe estar instalado (ya aparece en `requirements.txt`).
-- Los archivos se guardan en `static/audio/`.
-- Si usas un entorno virtual en Windows PowerShell, activa con `.`\`venv\Scripts\Activate.ps1`.
+## 📞 Contacto
 
-Recomendaciones siguientes:
-
-- Añadir validación de idioma y parámetros de voz.
-- Limpiar archivos antiguos en `static/audio/` según políticas de retención.
-- Añadir tests unitarios para el endpoint `/speak`.
+- **Desarrollador**: Jorge Doicela
+- **GitHub**: [@Jorge-Doicela](https://github.com/Jorge-Doicela)
+- **Reportar Problemas**: [Issues](https://github.com/Jorge-Doicela/asistente_kichwa/issues)
