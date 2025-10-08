@@ -64,6 +64,7 @@ async function translateText(text, src, dest) {
                 if (resp.ok) {
                     const data = await resp.json();
                     translation = data.translation || translation;
+                    renderDetected(data);
                 }
             }
         } else if (src === 'qu' && dest === 'es') {
@@ -91,6 +92,7 @@ async function translateText(text, src, dest) {
                 if (resp.ok) {
                     const data = await resp.json();
                     translation = data.translation || translation;
+                    renderDetected(data);
                 }
             }
         }
@@ -154,6 +156,18 @@ async function speakText(text, langPrefer) {
 // Helpers
 function setStatus(msg) {
     status.textContent = msg;
+}
+
+// Renderizador de idioma detectado
+function renderDetected(data) {
+    if (!data) return;
+    const { detected_lang, scores } = data;
+    if (!detected_lang) return;
+    const qu = scores?.qu ?? 0;
+    const es = scores?.es ?? 0;
+    const conf = Math.max(qu, es);
+    const label = detected_lang === 'qu' ? 'Kichwa' : 'Español';
+    status.textContent = `Detectado: ${label} (confianza ${conf.toFixed(1)})`;
 }
 
 function updateRecordingState(recording) {

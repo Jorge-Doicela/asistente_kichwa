@@ -10,6 +10,9 @@ import json
 import shutil
 from datetime import datetime
 import threading
+import unicodedata
+import re
+import random
 
 app = Flask(__name__)
 CORS(app)
@@ -67,6 +70,119 @@ def ensure_meta_initialized():
 
 def load_dictionary():
     return _safe_read_json(DICT_PATH, {})
+
+# -------------------- Normalización y segmentación Kichwa --------------------
+_NON_ALNUM_RE = re.compile(r"[^a-zñáéíóúü-]+", re.IGNORECASE)
+_DASHES_RE = re.compile(r"[-_·•]+")
+
+def remove_diacritics(text):
+    # Normaliza eliminando tildes, conserva ñ
+    if not text:
+        return ''
+    normalized = unicodedata.normalize('NFD', text)
+    out_chars = []
+    for ch in normalized:
+        # Mantener ñ/Ñ explícitamente
+        if ch in ('ñ', 'Ñ'):
+            out_chars.append(ch)
+            continue
+        # Omitir marcas diacríticas
+        if unicodedata.category(ch) == 'Mn':
+            continue
+        out_chars.append(ch)
+    return unicodedata.normalize('NFC', ''.join(out_chars))
+
+def normalize_kichwa_token(token):
+    # minúsculas, quitar tildes, normalizar guiones múltiples a uno, recortar
+    t = token.strip().lower()
+    t = remove_diacritics(t)
+    t = _DASHES_RE.sub('-', t)
+    t = t.strip('-')
+    return t
+
+def tokenize_kichwa(text):
+    if not text:
+        return []
+    # Reemplazar separadores no alfanum a espacios, preservar guiones como partidores de morfemas
+    cleaned = _NON_ALNUM_RE.sub(' ', text)
+    tokens = []
+    for raw in cleaned.split():
+        t = normalize_kichwa_token(raw)
+        if not t:
+            continue
+        # Segmentar por sufijos comunes kichwa (heurístico)
+        # Lista básica de morfemas frecuentes
+        suffixes = ['-mi', '-m', '-shi', '-sh', '-ka', '-k', '-ta', '-n', '-pak', '-paj', '-sapa', '-kuna']
+        # asegurar formato con guión
+        parts = t.split('-') if '-' in t else [t]
+        # Mantener token completo y sus partes base
+        tokens.append(t)
+        for p in parts:
+            if p and p != t:
+                tokens.append(p)
+        # Generar variantes sin sufijos con y sin guiones
+        for suf in suffixes:
+            suf_clean = suf.lstrip('-')
+            if t.endswith(suf_clean):
+                base = t[: -len(suf_clean)]
+                base = base.rstrip('-')
+                if base:
+                    tokens.append(base)
+    # Unificar y devolver únicos preservando orden
+    seen = set()
+    uniq = []
+    for tok in tokens:
+        if tok not in seen:
+            seen.add(tok)
+            uniq.append(tok)
+    return uniq
+
+def best_kichwa_match(es_to_qu_dic, text):
+    # Intenta reemplazos por frases más largas primero usando normalización/tokenización
+    if not text:
+        return text
+    # Construir mapping normalizado -> original kichwa
+    normalized_map = {}
+    for es, qu in es_to_qu_dic.items():
+        es_norm = normalize_kichwa_token(es)
+        if es_norm:
+            normalized_map[es_norm] = qu
+
+    # Reemplazo sobre texto normalizado, pero preservando espacios del original
+    txt_norm = normalize_kichwa_token(text)
+    # Ordenar claves por longitud desc para coincidencias más largas
+    keys = sorted(normalized_map.keys(), key=lambda k: -len(k))
+    out = txt_norm
+    for k in keys:
+        if not k: continue
+        if k in out:
+            out = out.replace(k, normalize_kichwa_token(normalized_map[k]))
+    # Devolver versión normalizada traducida; el front muestra el valor final
+    return out
+
+# -------------------- Detección automática de idioma --------------------
+_KICHWA_CHAR_HINTS = set(list('kqshñ'))
+_SPANISH_ONLY_HINTS = set(list('áéíóú'))
+_KICHWA_COMMON_TOKENS = {'ñuka','kan','pay','kanka','mashi','alli','shuk','wasi','yachay','mikuy','kawsay','kawsankichu','rimay','mikhuna','yakuk'}
+
+def detect_lang_text(text):
+    """Devuelve 'qu' o 'es' heurísticamente para texto."""
+    lang, _, _ = detect_lang_with_score(text)
+    return lang
+
+def detect_lang_with_score(text):
+    """Retorna (lang, score_qu, score_es)."""
+    if not text:
+        return ('es', 0.0, 0.0)
+    t = normalize_kichwa_token(text)
+    hints_qu = sum(1 for ch in t if ch in _KICHWA_CHAR_HINTS)
+    hints_es = sum(1 for ch in t if ch in _SPANISH_ONLY_HINTS)
+    tokens = set(tokenize_kichwa(t))
+    common_qu = len(tokens & _KICHWA_COMMON_TOKENS)
+    score_qu = hints_qu * 1.0 + common_qu * 2.0
+    score_es = hints_es * 1.0
+    lang = 'qu' if score_qu >= max(1.0, score_es) else 'es'
+    return (lang, float(score_qu), float(score_es))
 
 def backup_dictionary(reason="manual"):
     # Copia con timestamp y versión
@@ -155,6 +271,10 @@ def index():
 def diccionario_page():
     return render_template('diccionario.html')
 
+@app.route('/estudiar')
+def estudiar_page():
+    return render_template('estudiar.html')
+
 @app.route('/speech-to-text', methods=['POST'])
 def speech_to_text():
     # Verificar archivo
@@ -192,7 +312,7 @@ def speech_to_text():
     elif lang_param:
         language_code = lang_param
     else:
-        language_code = 'qu-EC'
+        language_code = None  # autodetección: probar qu-EC y es-EC
 
     # Procesar audio
     recognizer = sr.Recognizer()
@@ -235,11 +355,12 @@ def speech_to_text():
                         with open(filepath, 'rb') as f_audio:
                             files = {'file': (os.path.basename(filepath), f_audio)}
                             data = {'model': 'whisper-1'}
-                            # pasar idioma si es disponible (solo la parte primaria e.g. 'es' o 'qu')
-                            try:
-                                data['language'] = language_code.split('-')[0]
-                            except Exception:
-                                pass
+                            # pasar idioma solo si está definido; si no, permitir autodetección del proveedor
+                            if language_code:
+                                try:
+                                    data['language'] = language_code.split('-')[0]
+                                except Exception:
+                                    pass
                             resp_api = requests.post('https://api.openai.com/v1/audio/transcriptions', headers=headers, files=files, data=data, timeout=120)
 
                         if resp_api.ok:
@@ -262,9 +383,22 @@ def speech_to_text():
                     'suggestion': suggestion
                 }), 400
 
-        # Reconocer texto
+        # Reconocer texto (autodetección si no se definió language_code)
         try:
-            text = recognizer.recognize_google(audio_data, language=language_code)
+            if language_code:
+                text = recognizer.recognize_google(audio_data, language=language_code)
+            else:
+                text_qu = ''
+                text_es = ''
+                try:
+                    text_qu = recognizer.recognize_google(audio_data, language='qu-EC')
+                except Exception:
+                    text_qu = ''
+                try:
+                    text_es = recognizer.recognize_google(audio_data, language='es-EC')
+                except Exception:
+                    text_es = ''
+                text = text_qu if len(text_qu) >= len(text_es) else text_es
         except sr.UnknownValueError:
             text = ""
         except sr.RequestError as e:
@@ -291,27 +425,53 @@ def translate():
         return jsonify({'translation': ''})
 
     try:
-        # Cargar diccionario local para kichwa
+        # Detección de idioma cuando src es auto
+        if src == 'auto':
+            detected, score_qu, score_es = detect_lang_with_score(text)
+            src = detected
+            if dest == 'es' and detected == 'es':
+                dest = 'qu'
+            elif dest.startswith('qu') and detected.startswith('qu'):
+                dest = 'es'
+
+        # Cargar diccionario local
+        dic = load_dictionary()
+
+        # Normalizar entrada para mejorar coincidencias
+        txt = text.strip()
+
+        # Español -> Kichwa (dic keys en español)
         if dest.startswith('qu') and (src.startswith('es') or src == 'auto'):
-            dict_path = os.path.join('data', 'dictionary_es_qu.json')
-            if os.path.exists(dict_path):
-                with open(dict_path, 'r', encoding='utf-8') as f:
-                    dic = json.load(f)
+            if dic:
+                # Reemplazo por frases largas y normalizadas
+                out = best_kichwa_match(dic, txt)
+                if normalize_kichwa_token(out) != normalize_kichwa_token(txt):
+                    return jsonify({'translation': out})
 
-                txt = text.strip().lower()
-                keys = sorted(dic.keys(), key=lambda k: -len(k))
-                out = txt
-                
-                for k in keys:
-                    if k in out:
-                        out = out.replace(k, dic[k])
-
-                if out != txt:
+        # Kichwa -> Español: invertimos el dic y utilizamos tokenización/normalización
+        if dest.startswith('es') and (src.startswith('qu') or src == 'auto'):
+            if dic:
+                inv = {normalize_kichwa_token(v): k for k, v in dic.items() if isinstance(v, str)}
+                tokens = tokenize_kichwa(txt)
+                # sustitución token a token si hay coincidencias exactas normalizadas
+                replaced = []
+                for tok in tokens:
+                    repl = inv.get(tok)
+                    replaced.append(repl if repl else tok)
+                out = ' '.join(replaced)
+                if normalize_kichwa_token(out) != normalize_kichwa_token(txt):
                     return jsonify({'translation': out})
 
         # Fallback a Google Translate
         translation = translator.translate(text, src=src, dest=dest)
-        return jsonify({'translation': translation.text})
+        resp = {'translation': translation.text}
+        try:
+            if 'detected' in locals():
+                resp['detected_lang'] = detected
+                resp['scores'] = {'qu': score_qu, 'es': score_es}
+        except Exception:
+            pass
+        return jsonify(resp)
     except Exception as e:
         return jsonify({'translation': '', 'error': str(e)})
 
@@ -328,9 +488,28 @@ def text_to_speech():
     filepath = os.path.join(AUDIO_FOLDER, filename)
     
     try:
-        tts = gTTS(text=text, lang=lang)
+        # Normalizar código de idioma y fallback para kichwa/quechua
+        lang_code = (lang or 'es').lower()
+        try:
+            # gTTS espera códigos simples como 'es', 'en' (no 'es-EC')
+            if '-' in lang_code:
+                lang_code = lang_code.split('-')[0]
+            # gTTS no soporta qu/qu-EC; usar voz española como aproximación
+            if lang_code in ('qu', 'que', 'quz', 'quy', 'quh'):
+                lang_code = 'es'
+        except Exception:
+            lang_code = 'es'
+
+        try:
+            tts = gTTS(text=text, lang=lang_code)
+        except Exception as e:
+            # Si falla por idioma no soportado, reintentar en español
+            try:
+                tts = gTTS(text=text, lang='es')
+            except Exception:
+                raise e
         tts.save(filepath)
-        return jsonify({'audio_url': f'/static/audio/{filename}'})
+        return jsonify({'audio_url': f'/static/audio/{filename}', 'used_lang': lang_code})
     except Exception as e:
         return jsonify({'audio_url': '', 'error': str(e)})
 
@@ -545,6 +724,94 @@ def api_dictionary_export():
 
     # Por defecto JSON
     return jsonify({'dictionary': dic})
+
+# -------------------- Estudio: Flashcards y Quizzes --------------------
+@app.route('/api/study/flashcards', methods=['GET'])
+def api_study_flashcards():
+    """Devuelve una lista de tarjetas de estudio basadas en el diccionario.
+
+    Parámetros:
+      - dir: 'es2qu' (por defecto) o 'qu2es'
+      - limit: cantidad de tarjetas (por defecto 20)
+    """
+    direction = (request.args.get('dir') or 'es2qu').lower()
+    try:
+        limit = int(request.args.get('limit', '20'))
+    except Exception:
+        limit = 20
+
+    dic = load_dictionary()
+    if not dic:
+        return jsonify({'flashcards': []})
+
+    items = list(dic.items())  # [(es, qu)]
+    random.shuffle(items)
+    selected = items[: max(0, limit)]
+
+    flashcards = []
+    for es, qu in selected:
+        if not isinstance(qu, str):
+            continue
+        if direction == 'qu2es':
+            flashcards.append({'front': qu, 'back': es, 'dir': 'qu2es'})
+        else:
+            flashcards.append({'front': es, 'back': qu, 'dir': 'es2qu'})
+
+    return jsonify({'flashcards': flashcards})
+
+@app.route('/api/study/quiz', methods=['GET'])
+def api_study_quiz():
+    """Genera preguntas de opción múltiple usando el diccionario.
+
+    Parámetros:
+      - dir: 'es2qu' (por defecto) o 'qu2es'
+      - limit: número de preguntas (por defecto 10)
+      - options: número de opciones por pregunta (por defecto 4)
+    """
+    direction = (request.args.get('dir') or 'es2qu').lower()
+    try:
+        limit = int(request.args.get('limit', '10'))
+    except Exception:
+        limit = 10
+    try:
+        num_options = max(2, int(request.args.get('options', '4')))
+    except Exception:
+        num_options = 4
+
+    dic = load_dictionary()
+    if not dic:
+        return jsonify({'questions': []})
+
+    pairs = [(es, qu) for es, qu in dic.items() if isinstance(qu, str)]
+    if not pairs:
+        return jsonify({'questions': []})
+
+    random.shuffle(pairs)
+    base = pairs[: max(0, limit)]
+
+    questions = []
+    for es, qu in base:
+        if direction == 'qu2es':
+            prompt = qu
+            correct = es
+            pool = [p[0] for p in pairs if p[1] != qu]
+        else:
+            prompt = es
+            correct = qu
+            pool = [p[1] for p in pairs if p[0] != es]
+
+        # construir opciones
+        distractors = random.sample(pool, k=min(len(pool), num_options - 1)) if pool else []
+        options = distractors + [correct]
+        random.shuffle(options)
+        questions.append({
+            'prompt': prompt,
+            'options': options,
+            'answer': correct,
+            'dir': direction
+        })
+
+    return jsonify({'questions': questions})
 
 # Metadatos, historial, backups y restauración
 @app.route('/api/dictionary/meta', methods=['GET'])

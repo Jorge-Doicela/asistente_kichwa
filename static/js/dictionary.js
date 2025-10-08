@@ -9,6 +9,21 @@ let pageSize = 10;
 let currentPage = 1;
 let swapped = false; // controla si se muestran columnas invertidas
 
+// Utilidad de normalización ligera para búsqueda (quitar tildes y normalizar guiones)
+const normalizeForSearch = (s) => {
+    if (!s) return '';
+    const nfd = s.normalize('NFD');
+    let out = '';
+    for (const ch of nfd) {
+        if (ch === 'ñ' || ch === 'Ñ') { out += ch; continue; }
+        if (/\p{Mn}/u.test(ch)) continue; // diacríticos
+        out += ch;
+    }
+    out = out.normalize('NFC').toLowerCase();
+    out = out.replace(/[-_·•]+/g, '-').replace(/^[-]+|[-]+$/g, '');
+    return out;
+};
+
 // Cargar diccionario
 async function loadDictionary() {
     try {
@@ -27,11 +42,14 @@ function renderDictionary(filter = currentFilter) {
     const container = document.getElementById('dictionary-list');
     container.innerHTML = '';
 
+    const normFilter = normalizeForSearch(filter);
+
     // Filtrar y ordenar entradas
     let entries = Object.entries(dictionary)
         .filter(([es, qu]) => {
             const left = swapped ? qu : es;
-            return !filter || left.toLowerCase().includes(filter.toLowerCase());
+            const leftNorm = normalizeForSearch(left);
+            return !normFilter || leftNorm.includes(normFilter);
         })
         .sort((a, b) => {
             const valA = (sortBy === 'spanish' ? a[0] : a[1]) || '';
