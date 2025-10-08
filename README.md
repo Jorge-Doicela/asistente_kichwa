@@ -59,7 +59,9 @@ La app enviará el archivo de audio directamente a la API de transcripción y us
 2. **Crear entorno virtual**
    ```powershell
    # Windows
-   (Es necesario tener activado la ejecución de scipts en powershell)
+   (En windows es necesario tener activado la ejecución de scipts en powershell. Desde la ruta del proyecto en powershell 
+   escribimos: Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned)
+
    python -m venv venv
    .\venv\Scripts\activate
 

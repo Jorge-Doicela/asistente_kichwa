@@ -243,6 +243,42 @@ def api_dictionary_add():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/dictionary/update', methods=['POST'])
+def api_dictionary_update():
+    try:
+        data = request.get_json()
+        spanish = data.get('spanish', '').strip().lower()
+        kichwa = data.get('kichwa', '').strip()
+        spanish_new = (data.get('spanish_new') or '').strip().lower()
+
+        if not spanish or not kichwa:
+            return jsonify({'error': 'Faltan datos'}), 400
+
+        dict_path = os.path.join('data', 'dictionary_es_qu.json')
+        if not os.path.exists(dict_path):
+            return jsonify({'error': 'Diccionario no encontrado'}), 404
+
+        with open(dict_path, 'r', encoding='utf-8') as f:
+            dic = json.load(f)
+
+        if spanish not in dic:
+            return jsonify({'error': 'Palabra no encontrada'}), 404
+
+        # Actualizar valor
+        dic[spanish] = kichwa
+
+        # Renombrar clave si se envía spanish_new
+        if spanish_new and spanish_new != spanish:
+            dic[spanish_new] = dic.pop(spanish)
+            spanish = spanish_new
+
+        with open(dict_path, 'w', encoding='utf-8') as f:
+            json.dump(dic, f, ensure_ascii=False, indent=2)
+
+        return jsonify({'ok': True, 'spanish': spanish, 'kichwa': dic[spanish]})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/dictionary/delete', methods=['POST'])
 def api_dictionary_delete():
     try:
@@ -303,6 +339,34 @@ def api_dictionary_import():
         json.dump(dic, fh, ensure_ascii=False, indent=2)
 
     return jsonify({'ok': True, 'added': added})
+
+@app.route('/api/dictionary/export', methods=['GET'])
+def api_dictionary_export():
+    fmt = (request.args.get('format') or 'json').lower()
+    dict_path = os.path.join('data', 'dictionary_es_qu.json')
+
+    if os.path.exists(dict_path):
+        with open(dict_path, 'r', encoding='utf-8') as f:
+            dic = json.load(f)
+    else:
+        dic = {}
+
+    if fmt == 'csv':
+        # Construir CSV simple "es,kichwa"
+        import io
+        import csv
+        output = io.StringIO()
+        writer = csv.writer(output)
+        for es, qu in sorted(dic.items(), key=lambda x: x[0]):
+            writer.writerow([es, qu])
+        csv_data = output.getvalue()
+        from flask import Response
+        return Response(csv_data, mimetype='text/csv', headers={
+            'Content-Disposition': 'attachment; filename=dictionary_es_qu.csv'
+        })
+
+    # Por defecto JSON
+    return jsonify({'dictionary': dic})
 
 @app.route('/transcribe', methods=['POST'])
 def transcribe():
