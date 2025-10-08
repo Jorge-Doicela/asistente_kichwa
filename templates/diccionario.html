@@ -11,10 +11,13 @@
 <body>
     <div class="container py-5">
         <nav class="d-flex justify-content-between align-items-center mb-4">
-            <div>
-                <h1 class="mb-0">Diccionario Kichwa</h1>
-                <small class="text-muted">Español ↔ Kichwa — contribuye y aprende</small>
-            </div>
+            <div class="d-flex align-items-center gap-3 mt-4">
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Rimaykuna" class="app-logo" width="95" height="95">
+    <div>
+        <h1 class="mb-0">Diccionario Kichwa</h1>
+        <small class="text-muted">Español ↔ Kichwa — contribuye y aprende</small>
+    </div>
+</div>
             <div class="d-flex gap-2">
                 <a href="/" class="btn btn-outline-secondary btn-sm">Traductor</a>
                 <a href="/estudiar" class="btn btn-outline-primary btn-sm">Estudiar</a>
