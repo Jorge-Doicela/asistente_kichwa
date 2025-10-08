@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistente Kichwa ↔ Español</title>
+    <title>Asistente Kichwa - Español</title>
     <!-- Bootstrap 5 + Inter font -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,126 +11,76 @@
 </head>
 <body>
     <div class="container py-5">
-        <header class="d-flex justify-content-between align-items-center mb-5">
+        <header class="d-flex justify-content-between align-items-center mb-4">
             <div>
-                <h1 class="mb-1">Asistente de Voz</h1>
-                <p class="text-muted mb-0">Traduce entre Kichwa y Español usando tu voz</p>
+                <h1 class="mb-0">Asistente Kichwa - Español</h1>
+                <small class="text-muted">Traduce entre Kichwa y Español — voz y texto</small>
             </div>
-            <a href="/diccionario" class="btn btn-sm btn-outline-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book me-1" viewBox="0 0 16 16">
-                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-                </svg>
-                Diccionario y Recursos
-            </a>
+            <div>
+                <a href="/diccionario" class="btn btn-outline-secondary btn-sm">Diccionario</a>
+            </div>
         </header>
 
-        <div class="row g-4">
-            <!-- Panel de entrada de texto -->
-            <div class="col-lg-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title mb-4">Entrada de Texto</h5>
-                        
-                        <!-- Selector de idioma de entrada -->
-                        <div class="mb-3">
-                            <label class="form-label">Idioma de Entrada</label>
-                            <div class="btn-group w-100" role="group">
-                                <input type="radio" class="btn-check" name="src-lang" id="src-es" value="es" checked>
-                                <label class="btn btn-outline-primary" for="src-es">Español</label>
-                                
-                                <input type="radio" class="btn-check" name="src-lang" id="src-qu" value="qu">
-                                <label class="btn btn-outline-primary" for="src-qu">Kichwa</label>
+        <!-- Contenedor principal: dos paneles (entrada / salida) -->
+        <div class="translate-wrapper card p-3 shadow-sm">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="panel-input p-3 bg-white rounded">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <small class="text-muted">De</small>
+                                <div class="lang-pills">
+                                    <input type="radio" class="btn-check" name="src-lang" id="src-es" value="es" checked>
+                                    <label class="btn lang-pill" for="src-es">Español</label>
+                                    <input type="radio" class="btn-check" name="src-lang" id="src-qu" value="qu">
+                                    <label class="btn lang-pill" for="src-qu">Kichwa</label>
+                                </div>
+                            </div>
+                            <button id="swap-lang" class="btn btn-light btn-circle" title="Intercambiar">↔</button>
+                        </div>
+
+                        <label for="texto-manual" class="form-label visually-hidden">Texto</label>
+                        <textarea id="texto-manual" class="form-control input-area mb-3" rows="6" placeholder="Escribe o pega texto aquí..."></textarea>
+
+                        <div class="d-flex gap-2">
+                            <button id="btn-traducir-manual" class="btn btn-primary">Traducir</button>
+                            <div class="ms-auto d-flex gap-2">
+                                <button id="btn-kichwa" class="btn btn-outline-secondary btn-circle" title="Grabar en Kichwa">🎤Kichwa</button>
+                                <button id="btn-espanol" class="btn btn-outline-secondary btn-circle ms-4" title="Grabar en Español">🎙️Español</button>
                             </div>
                         </div>
 
-                        <!-- Texto de entrada manual -->
-                        <div class="mb-4">
-                            <label for="texto-manual" class="form-label">Escribe tu texto</label>
-                            <textarea id="texto-manual" class="form-control" rows="3" placeholder="Escribe aquí el texto que deseas traducir..."></textarea>
-                            <div class="mt-2">
-                                <button id="btn-traducir-manual" class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate me-2" viewBox="0 0 16 16">
-                                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
-                                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
-                                    </svg>
-                                    Traducir
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Grabación de voz -->
-                        <div class="text-center mb-4">
-                            <div class="btn-group btn-group-lg">
-                                <button id="btn-kichwa" class="btn btn-outline-success">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mic-fill me-2" viewBox="0 0 16 16">
-                                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-                                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-                                    </svg>
-                                    Grabar en Kichwa
-                                </button>
-                                <button id="btn-espanol" class="btn btn-outline-success">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mic-fill me-2" viewBox="0 0 16 16">
-                                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-                                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0-1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-                                    </svg>
-                                    Grabar en Español
-                                </button>
-                            </div>
-                            <div class="recording-indicator d-none mt-3">
-                                <div class="recording-pulse"></div>
-                                <span class="ms-2">Grabando...</span>
-                            </div>
-                        </div>
-
-                        <!-- Subir audio -->
-                        <div>
-                            <label class="form-label">Subir archivo de audio</label>
-                            <input id="upload-audio" type="file" accept="audio/*" class="form-control mb-2" multiple />
-                            <div class="d-flex gap-2">
-                                <select id="upload-lang" class="form-select">
+                        <div class="mt-3">
+                            <label class="form-label small">Subir audio</label>
+                            <div class="d-flex gap-2 align-items-center">
+                                <input id="upload-audio" type="file" accept="audio/*" class="form-control form-control-sm" multiple />
+                                <select id="upload-lang" class="form-select form-select-sm w-auto">
                                     <option value="qu">Kichwa (qu)</option>
                                     <option value="es">Español (es)</option>
                                 </select>
-                                <button id="btn-upload" class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-up-fill me-2" viewBox="0 0 16 16">
-                                        <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z"/>
-                                    </svg>
-                                    Subir y Procesar
-                                </button>
+                                <button id="btn-upload" class="btn btn-outline-primary btn-sm">Subir</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Panel de traducción -->
-            <div class="col-lg-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title mb-4">Traducción</h5>
-
-                        <div class="mb-4">
-                            <label for="texto-original" class="form-label">Texto Original</label>
-                            <textarea id="texto-original" class="form-control bg-light" rows="3" readonly></textarea>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="texto-traducido" class="form-label">Traducción</label>
-                            <div class="position-relative">
-                                <textarea id="texto-traducido" class="form-control bg-light" rows="3" readonly></textarea>
-                                <div class="position-absolute bottom-0 end-0 p-2">
-                                    <button id="btn-play" class="btn btn-warning btn-sm rounded-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
-                                            <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
-                                            <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
-                                            <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
-                                        </svg>
-                                    </button>
-                                </div>
+                <div class="col-md-6">
+                    <div class="panel-output p-3 bg-white rounded position-relative">
+                        <div class="d-flex gap-3">
+                            <div class="flex-fill">
+                                <label for="texto-original" class="form-label small">Texto Original</label>
+                                <textarea id="texto-original" class="form-control output-area mb-2" rows="6" readonly></textarea>
+                            </div>
+                            <div class="flex-fill">
+                                <label for="texto-traducido" class="form-label small">Traducción</label>
+                                <textarea id="texto-traducido" class="form-control output-area mb-2" rows="6" readonly></textarea>
                             </div>
                         </div>
 
-                        <div id="status" class="text-center text-muted small"></div>
+                        <div class="d-flex justify-content-end align-items-center gap-2">
+                            <div id="status" class="small text-muted"></div>
+                            <button id="btn-play" class="btn btn-warning btn-sm rounded-circle">▶</button>
+                        </div>
                     </div>
                 </div>
             </div>

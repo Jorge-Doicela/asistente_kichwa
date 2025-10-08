@@ -2,12 +2,12 @@
 
 Aplicación web interactiva para traducción bidireccional entre Kichwa y Español, con soporte para entrada por voz, texto y archivos de audio.
 
-![Vista previa de la aplicación](./static/img/preview.png)
+![Logo de la aplicación](./static/img/logo.png)
 
 ## 🌟 Características Principales
 
 - **Traducción Bidireccional**
-  - Traducción instantánea Kichwa ↔ Español
+  - Traducción instantánea Kichwa - Español
   - Diccionario local incorporado
   - Sistema de traducción fallback
 
@@ -24,13 +24,29 @@ Aplicación web interactiva para traducción bidireccional entre Kichwa y Españ
 
 ## 🛠️ Requisitos
 
-- Python 3.8 o superior
-- Navegador web moderno con soporte para:
   - Web Speech API
   - MediaRecorder API
   - Web Audio API
 - Micrófono (para funciones de voz)
-- Tener descargado https://ffmpeg.org/ y añadido al path la carpeta bin
+
+## Fallback sin ffmpeg (opcional)
+
+Si no puedes instalar `ffmpeg`, la aplicación usa una API de transcripción remota. Para ello necesitas una clave de API y configurar una variable de entorno:
+
+- Establece la variable `OPENAI_API_KEY` con tu clave.
+- Opcionalmente, define `TRANSCRIBE_PROVIDER='openai'` (valor por defecto).
+
+Ejemplo en PowerShell:
+
+```powershell
+$env:OPENAI_API_KEY = 'sk-xxxxx'
+# Luego inicia la app en la misma terminal
+python .\app.py
+```
+
+La app enviará el archivo de audio directamente a la API de transcripción y usará la respuesta si la conversión local falla.
+- Tener descargado https://ffmpeg.org/ y añadido al path la carpeta 
+  (ffmpeg-release-essentials.zip o .7z última versión)
 
 ## 📦 Instalación
 

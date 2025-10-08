@@ -236,12 +236,29 @@ async function startRecording(lang) {
                     lastTranslation = translation;
                     setStatus('');
                 } else {
-                    throw new Error(data.error || 'Error al procesar audio');
+                    // Lanzar la respuesta completa para que el bloque catch pueda mostrar sugerencias/ detalles
+                    throw new Error(JSON.stringify(data));
                 }
             } catch (err) {
                 console.error('Error procesando audio:', err);
                 setStatus('Error al procesar audio');
-                showAlert('Error al procesar el audio', 'danger');
+
+                // Intentar leer detalles/sugerencias del servidor (p.ej. instalar ffmpeg)
+                let alertMsg = 'Error al procesar el audio';
+                try {
+                    const parsed = typeof err.message === 'string' ? JSON.parse(err.message) : err;
+                    if (parsed && parsed.suggestion) {
+                        alertMsg += '\n' + parsed.suggestion;
+                    } else if (parsed && parsed.detail) {
+                        alertMsg += '\n' + parsed.detail;
+                    } else if (parsed && parsed.error) {
+                        alertMsg += ': ' + parsed.error;
+                    }
+                } catch (e) {
+                    // no-op: err.message no es JSON
+                }
+
+                showAlert(alertMsg, 'danger');
             }
 
             stream.getTracks().forEach(track => track.stop());
@@ -332,7 +349,8 @@ btnUpload.addEventListener('click', async () => {
                 textoTraducido.value = translation;
                 lastTranslation = translation;
             } else {
-                throw new Error(data.error || 'Error al procesar archivo');
+                // Lanzar el objeto completo como string para que el bloque catch lo muestre
+                throw new Error(JSON.stringify(data));
             }
         }
 

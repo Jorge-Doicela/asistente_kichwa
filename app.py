@@ -4,6 +4,7 @@ import os
 import speech_recognition as sr
 from googletrans import Translator
 from gtts import gTTS
+import requests
 import uuid
 import json
 
@@ -92,7 +93,41 @@ def speech_to_text():
                         suggestion = 'Instale ffmpeg desde https://ffmpeg.org y asegúrese de que esté en el PATH del sistema'
                 except Exception:
                     pass
-                    
+                # Intentar fallback usando una API de transcripción remota (p.ej. OpenAI Whisper)
+                try:
+                    api_key = os.getenv('OPENAI_API_KEY')
+                    provider = os.getenv('TRANSCRIBE_PROVIDER', 'openai').lower()
+                except Exception:
+                    api_key = None
+                    provider = 'openai'
+
+                if api_key and provider == 'openai':
+                    try:
+                        # Llamada a la API de OpenAI para transcribir el archivo tal cual (acepta mp3, wav, etc.)
+                        headers = {'Authorization': f'Bearer {api_key}'}
+                        with open(filepath, 'rb') as f_audio:
+                            files = {'file': (os.path.basename(filepath), f_audio)}
+                            data = {'model': 'whisper-1'}
+                            # pasar idioma si es disponible (solo la parte primaria e.g. 'es' o 'qu')
+                            try:
+                                data['language'] = language_code.split('-')[0]
+                            except Exception:
+                                pass
+                            resp_api = requests.post('https://api.openai.com/v1/audio/transcriptions', headers=headers, files=files, data=data, timeout=120)
+
+                        if resp_api.ok:
+                            try:
+                                resp_json = resp_api.json()
+                                text = resp_json.get('text', '')
+                                return jsonify({'text': text})
+                            except Exception as parse_e:
+                                # si la respuesta no tiene texto, continuar para devolver el error original
+                                conv_err = f"API response parse error: {parse_e}; raw: {resp_api.text}"
+                        else:
+                            conv_err = f"Transcription API error: {resp_api.status_code} {resp_api.text}"
+                    except Exception as api_e:
+                        conv_err = f"Transcription API exception: {api_e}"
+
                 return jsonify({
                     'error': 'Error al procesar audio',
                     'detail': str(read_err),

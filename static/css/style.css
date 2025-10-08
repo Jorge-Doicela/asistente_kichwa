@@ -102,6 +102,66 @@ textarea.form-control {
     resize: vertical;
 }
 
+/* Nuevos estilos inspirados en Google Translate */
+.translate-wrapper {
+    background: transparent;
+}
+
+.translate-wrapper .panel-input,
+.translate-wrapper .panel-output {
+    border-radius: 12px;
+    border: 1px solid rgba(15,23,42,0.04);
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+.lang-pills { display: inline-flex; gap: 6px; }
+.lang-pill {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(15,23,42,0.03);
+    border: 1px solid transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+.lang-pill:hover { background: rgba(15,23,42,0.06); }
+.btn-check:checked + .lang-pill {
+    background: var(--primary-color);
+    color: white;
+    border-color: rgba(37,99,235,0.15);
+}
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    min-width: 40px;
+}
+
+.input-area { min-height: 160px; font-size: 0.98rem; }
+.output-area { min-height: 160px; background: #fbfdff; }
+
+.panel-input .form-label.small,
+.panel-output .form-label.small { color: #475569; font-weight: 600; }
+
+.translate-wrapper .btn-primary { padding: 0.6rem 1rem; }
+
+/* Ajustes para el status y grabación */
+.recording-indicator { gap: 0.5rem; }
+.recording-indicator .recording-pulse { width: 10px; height: 10px; }
+
+/* Lista de archivos subidos (pequeño ajuste visual) */
+#uploaded-list { background: transparent; border: none; padding: 0; }
+#uploaded-list .uploaded-item { background: #fff; }
+
+@media (max-width: 768px) {
+    .btn-circle { width: 36px; height: 36px; }
+    .input-area, .output-area { min-height: 120px; }
+}
+
 /* Estado y Feedback */
 #status {
     padding: 1rem;
