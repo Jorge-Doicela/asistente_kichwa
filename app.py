@@ -29,8 +29,8 @@ os.makedirs(AUDIO_FOLDER, exist_ok=True)
 os.makedirs(DATA_FOLDER, exist_ok=True)
 os.makedirs(BACKUP_DIR, exist_ok=True)
 
-# Lock simple para operaciones en el diccionario
-DICT_LOCK = threading.Lock()
+# Lock reentrante para permitir llamadas anidadas (evita deadlocks)
+DICT_LOCK = threading.RLock()
 
 def _now_iso():
     return datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'
