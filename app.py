@@ -624,14 +624,21 @@ def api_dictionary_import():
         return jsonify({'error': 'file required'}), 400
 
     f = request.files['file']
+    # Leer bytes una sola vez y decodificar con fallback
     try:
-        content = f.read().decode('utf-8')
+        raw = f.read()
+    except Exception as e:
+        return jsonify({'error': f'No se pudo leer el archivo: {e}'}), 400
+    try:
+        content = raw.decode('utf-8')
     except Exception:
-        # intentar latin-1 si utf-8 falla
         try:
-            content = f.read().decode('latin-1')
+            content = raw.decode('latin-1')
         except Exception as e:
-            return jsonify({'error': f'No se pudo leer el archivo: {e}'}), 400
+            return jsonify({'error': f'No se pudo decodificar el archivo: {e}'}), 400
+    # Remover BOM si existe
+    if content and content[0] == '\ufeff':
+        content = content.lstrip('\ufeff')
 
     import csv, io
 

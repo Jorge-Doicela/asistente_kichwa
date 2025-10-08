@@ -55,17 +55,23 @@
 
             <div class="col-12 col-lg-8">
                 <div class="card shadow-sm p-3">
-                    <div class="d-flex mb-3 align-items-center gap-2 flex-wrap">
-                        <input type="text" class="form-control form-control-lg" id="search-dictionary" placeholder="Buscar palabra..." aria-label="Buscar en el diccionario">
-                        <button class="btn btn-outline-secondary" type="button" id="btn-search" title="Buscar">🔍</button>
-                        <div class="ms-auto d-flex align-items-center gap-2 flex-wrap">
-                            <button class="btn btn-outline-primary" id="btn-export-csv" type="button">Exportar CSV</button>
-                            <button class="btn btn-outline-secondary" id="btn-export-json" type="button">Exportar JSON</button>
-                            <button class="btn btn-light" id="toggle-direction" type="button" title="Intercambiar columnas">↔ Columnas</button>
-                            <button class="btn btn-outline-info" id="btn-meta" type="button">Meta</button>
-                            <button class="btn btn-outline-dark" id="btn-history" type="button">Historial</button>
-                            <button class="btn btn-outline-warning" id="btn-backups" type="button">Backups</button>
+                    <div class="position-sticky top-0 bg-white pb-2" style="z-index: 1;">
+                        <div class="d-flex align-items-center gap-2 flex-wrap" role="toolbar" aria-label="Barra de herramientas del diccionario">
+                            <div class="input-group input-group-lg flex-grow-1">
+                                <input type="text" class="form-control" id="search-dictionary" placeholder="Buscar palabra..." aria-label="Buscar en el diccionario" aria-describedby="btn-search">
+                                <button class="btn btn-outline-secondary" type="button" id="btn-search" title="Buscar">🔍</button>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center gap-2 flex-wrap">
+                                <button class="btn btn-outline-primary btn-sm" id="btn-export-csv" type="button">Exportar CSV</button>
+                                <button class="btn btn-outline-secondary btn-sm" id="btn-export-json" type="button">Exportar JSON</button>
+                                <button class="btn btn-light btn-sm" id="toggle-direction" type="button" title="Intercambiar columnas">↔ Columnas</button>
+                                <button class="btn btn-outline-info btn-sm" id="btn-meta" type="button">Meta</button>
+                                <button class="btn btn-outline-dark btn-sm" id="btn-history" type="button">Historial</button>
+                                <button class="btn btn-outline-warning btn-sm" id="btn-backups" type="button">Backups</button>
+                            </div>
                         </div>
+                        <div class="mt-2 small text-muted">Sugerencia: presiona Enter para buscar rápidamente.</div>
+                        <hr class="mt-2 mb-3">
                     </div>
 
                     <div class="row g-2 mb-3">
@@ -95,22 +101,23 @@
                         <h6 class="mb-2">Agregar nueva palabra</h6>
                         <form id="form-new-word" class="row g-2 align-items-center">
                             <div class="col-md-5">
-                                <input type="text" class="form-control" id="word-spanish" placeholder="Palabra en español" required>
+                                <input type="text" class="form-control form-control-sm" id="word-spanish" placeholder="Palabra en español" aria-label="Palabra en español" required>
                             </div>
                             <div class="col-md-5">
-                                <input type="text" class="form-control" id="word-kichwa" placeholder="Palabra en kichwa" required>
+                                <input type="text" class="form-control form-control-sm" id="word-kichwa" placeholder="Palabra en kichwa" aria-label="Palabra en kichwa" required>
                             </div>
                             <div class="col-md-2">
-                                <button type="submit" class="btn btn-primary w-100">Agregar</button>
+                                <button type="submit" class="btn btn-primary btn-sm w-100">Agregar</button>
                             </div>
                         </form>
+                        <div class="small text-muted mt-1">Consejo: añade primero en español, luego su equivalente en Kichwa.</div>
                     </div>
 
                     <div class="card mb-3 p-3">
                         <h6 class="mb-2">Importar CSV</h6>
-                        <div class="d-flex gap-2">
-                            <input id="csv-file" type="file" accept=".csv" class="form-control" />
-                            <button id="btn-import-csv" class="btn btn-outline-primary">Importar</button>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <input id="csv-file" type="file" accept=".csv" class="form-control form-control-sm" />
+                            <button id="btn-import-csv" class="btn btn-outline-primary btn-sm">Importar</button>
                         </div>
                         <small class="text-muted">Formato: español,kichwa</small>
                         <div id="csv-preview" class="mt-2 small"></div>
@@ -118,8 +125,8 @@
                     </div>
 
                     <div class="table-responsive">
-                        <table class="table table-hover align-middle">
-                            <thead>
+                        <table class="table table-hover table-striped table-bordered table-sm align-middle">
+                            <thead style="position: sticky; top: 0; background: var(--bs-body-bg); z-index: 0;">
                                 <tr>
                                     <th id="th-col-a">Español</th>
                                     <th id="th-col-b">Kichwa</th>
@@ -130,7 +137,7 @@
                                 <!-- dinámico -->
                             </tbody>
                         </table>
-                        <nav>
+                        <nav aria-label="Paginación del diccionario">
                             <ul class="pagination justify-content-center" id="pagination"></ul>
                         </nav>
                     </div>
