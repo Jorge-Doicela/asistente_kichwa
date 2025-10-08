@@ -269,5 +269,26 @@ def api_dictionary_import():
 
     return jsonify({'ok': True, 'added': added})
 
+@app.route('/transcribe', methods=['POST'])
+def transcribe():
+    return speech_to_text()
+
+@app.route('/api/ffmpeg', methods=['GET'])
+def api_ffmpeg():
+    """Verifica si ffmpeg está disponible en el sistema y su versión."""
+    try:
+        import subprocess
+        completed = subprocess.run(['ffmpeg', '-version'], capture_output=True, text=True)
+        ok = completed.returncode == 0
+        version = None
+        if ok:
+            first_line = (completed.stdout or '').splitlines()[0] if completed.stdout else ''
+            version = first_line
+        return jsonify({'available': ok, 'version': version}), (200 if ok else 404)
+    except FileNotFoundError:
+        return jsonify({'available': False, 'error': 'ffmpeg no encontrado'}), 404
+    except Exception as e:
+        return jsonify({'available': False, 'error': str(e)}), 500
+
 if __name__ == '__main__':
     app.run(debug=True)

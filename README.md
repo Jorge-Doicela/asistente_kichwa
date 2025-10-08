@@ -30,6 +30,7 @@ Aplicación web interactiva para traducción bidireccional entre Kichwa y Españ
   - MediaRecorder API
   - Web Audio API
 - Micrófono (para funciones de voz)
+- Tener descargado https://ffmpeg.org/ y añadido al path la carpeta bin
 
 ## 📦 Instalación
 
@@ -42,6 +43,7 @@ Aplicación web interactiva para traducción bidireccional entre Kichwa y Españ
 2. **Crear entorno virtual**
    ```powershell
    # Windows
+   (Es necesario tener activado la ejecución de scipts en powershell)
    python -m venv venv
    .\venv\Scripts\activate
 
