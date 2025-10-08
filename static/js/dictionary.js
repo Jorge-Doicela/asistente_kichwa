@@ -344,6 +344,7 @@ document.getElementById('toggle-direction').addEventListener('click', () => {
 const csvInput = document.getElementById('csv-file');
 const btnImportCsv = document.getElementById('btn-import-csv');
 const importResult = document.getElementById('import-result');
+const csvPreview = document.getElementById('csv-preview');
 
 btnImportCsv.addEventListener('click', async () => {
     if (!csvInput.files || csvInput.files.length === 0) {
@@ -366,10 +367,17 @@ btnImportCsv.addEventListener('click', async () => {
         
         const data = await r.json();
         if (r.ok) {
-            importResult.textContent = `Importado: ${data.added} entradas`;
+            importResult.innerHTML = `
+                <div><strong>Filas totales:</strong> ${data.total_rows ?? '-'}</div>
+                <div><strong>Agregadas:</strong> ${data.added}</div>
+                <div><strong>Actualizadas:</strong> ${data.updated}</div>
+                <div><strong>Duplicadas omitidas:</strong> ${data.skipped_duplicates}</div>
+                <div><strong>Inválidas omitidas:</strong> ${data.skipped_invalid}</div>
+            `;
             importResult.className = 'alert alert-success mt-2';
             loadDictionary();  // Recargar diccionario
             csvInput.value = '';  // Limpiar input
+            csvPreview.innerHTML = '';
         } else {
             throw new Error(data.error || 'Error al importar');
         }
@@ -383,3 +391,149 @@ btnImportCsv.addEventListener('click', async () => {
 // Cargar diccionario al inicio
 // Cargar diccionario al inicio
 loadDictionary();
+
+// Vista previa simple del CSV (primeras 10 filas)
+csvInput.addEventListener('change', async () => {
+    csvPreview.innerHTML = '';
+    const file = csvInput.files && csvInput.files[0];
+    if (!file) return;
+    const text = await file.text();
+    const lines = text.split(/\r?\n/).filter(Boolean).slice(0, 10);
+    if (lines.length === 0) return;
+    const table = document.createElement('table');
+    table.className = 'table table-sm table-bordered';
+    const tbody = document.createElement('tbody');
+    for (const line of lines) {
+        const [es = '', qu = ''] = line.split(',');
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${(es || '').trim()}</td><td>${(qu || '').trim()}</td>`;
+        tbody.appendChild(tr);
+    }
+    table.appendChild(tbody);
+    csvPreview.appendChild(table);
+});
+
+// Meta modal
+const btnMeta = document.getElementById('btn-meta');
+const metaModalEl = document.getElementById('metaModal');
+const metaContent = document.getElementById('meta-content');
+const MetaModal = () => new bootstrap.Modal(metaModalEl);
+btnMeta.addEventListener('click', async () => {
+    metaContent.innerHTML = 'Cargando...';
+    MetaModal().show();
+    try {
+        const r = await fetch('/api/dictionary/meta');
+        const data = await r.json();
+        const meta = data.meta || {};
+        const backups = data.backups || [];
+        metaContent.innerHTML = `
+            <div><strong>Versión actual:</strong> ${meta.current_version ?? '-'}</div>
+            <div><strong>Última actualización:</strong> ${meta.last_updated ?? '-'}</div>
+            <div><strong>Entradas:</strong> ${meta.entry_count ?? '-'}</div>
+            <hr/>
+            <div class="small text-muted">Backups registrados: ${backups.length}</div>
+        `;
+    } catch (e) {
+        metaContent.textContent = 'No se pudo cargar meta';
+    }
+});
+
+// History modal
+const btnHistory = document.getElementById('btn-history');
+const historyModalEl = document.getElementById('historyModal');
+const historyContent = document.getElementById('history-content');
+const HistoryModal = () => new bootstrap.Modal(historyModalEl);
+btnHistory.addEventListener('click', async () => {
+    historyContent.innerHTML = 'Cargando...';
+    HistoryModal().show();
+    try {
+        const r = await fetch('/api/dictionary/history?limit=200');
+        const data = await r.json();
+        const history = data.history || [];
+        if (history.length === 0) {
+            historyContent.textContent = 'Sin registros';
+            return;
+        }
+        const list = document.createElement('div');
+        list.className = 'list-group';
+        for (const h of history) {
+            const item = document.createElement('div');
+            item.className = 'list-group-item';
+            item.innerHTML = `
+                <div class="d-flex justify-content-between">
+                    <strong>${h.action}</strong>
+                    <span class="text-muted">${h.timestamp}</span>
+                </div>
+                <div>ES: ${h.spanish_before ?? ''} → ${h.spanish_after ?? ''}</div>
+                <div>QU: ${h.kichwa_before ?? ''} → ${h.kichwa_after ?? ''}</div>
+            `;
+            list.appendChild(item);
+        }
+        historyContent.innerHTML = '';
+        historyContent.appendChild(list);
+    } catch (e) {
+        historyContent.textContent = 'No se pudo cargar historial';
+    }
+});
+
+// Backups modal
+const btnBackups = document.getElementById('btn-backups');
+const backupsModalEl = document.getElementById('backupsModal');
+const backupsContent = document.getElementById('backups-content');
+const BackupsModal = () => new bootstrap.Modal(backupsModalEl);
+btnBackups.addEventListener('click', async () => {
+    backupsContent.innerHTML = 'Cargando...';
+    BackupsModal().show();
+    try {
+        const r = await fetch('/api/dictionary/backups');
+        const data = await r.json();
+        const files = data.files || [];
+        if (files.length === 0) {
+            backupsContent.textContent = 'No hay backups disponibles';
+            return;
+        }
+        const table = document.createElement('table');
+        table.className = 'table table-sm';
+        table.innerHTML = '<thead><tr><th>Archivo</th><th>Versión</th><th>Entradas</th><th>Fecha</th><th></th></tr></thead>';
+        const tbody = document.createElement('tbody');
+        for (const f of files) {
+            const m = f.metadata || {};
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${f.file}</td>
+                <td>${m.version ?? ''}</td>
+                <td>${m.entries ?? ''}</td>
+                <td>${m.created_at ?? ''}</td>
+                <td class="text-end"><button class="btn btn-sm btn-outline-warning" data-file="${f.file}">Restaurar</button></td>
+            `;
+            tbody.appendChild(tr);
+        }
+        table.appendChild(tbody);
+        backupsContent.innerHTML = '';
+        backupsContent.appendChild(table);
+
+        // listeners restaurar
+        backupsContent.querySelectorAll('button[data-file]').forEach(btn => {
+            btn.addEventListener('click', async (e) => {
+                const file = e.currentTarget.getAttribute('data-file');
+                if (!confirm(`¿Restaurar desde ${file}? Se creará una nueva versión.`)) return;
+                try {
+                    const r = await fetch('/api/dictionary/restore', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ file })
+                    });
+                    const data = await r.json();
+                    if (!r.ok || !data.ok) throw new Error(data.error || 'Error al restaurar');
+                    showAlert(`Restaurado ${data.restored_from} (${data.entries} entradas)`, 'success');
+                    loadDictionary();
+                } catch (e) {
+                    console.error(e);
+                    showAlert('No se pudo restaurar', 'danger');
+                }
+            });
+        });
+    } catch (e) {
+        backupsContent.textContent = 'No se pudo cargar backups';
+    }
+});
