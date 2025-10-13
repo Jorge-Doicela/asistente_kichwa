@@ -21,6 +21,8 @@ Aplicación web para traducir entre Kichwa y Español con soporte de voz, un dic
 
 Puedes verificar `ffmpeg` en la app: `GET /api/ffmpeg`.
 
+Nota: ahora la app incluye un modo de transcripción gratuito en el navegador usando Web Speech API (no requiere ffmpeg ni claves). Ver detalles abajo.
+
 ## Instalación y ejecución
 
 1) Clona el repositorio y entra al directorio del proyecto:
@@ -60,19 +62,90 @@ Transcripción remota (fallback si falla la conversión local):
 - `OPENAI_API_KEY`: clave de API para transcripción remota.
 - `TRANSCRIBE_PROVIDER`: por ahora `openai` (valor por defecto `openai`).
 
-Ejemplo (PowerShell):
+Ejemplos para definir la variable en Windows:
+```powershell
+# PowerShell (misma terminal donde arrancas la app)
+$env:OPENAI_API_KEY = 'sk-xxxxx'
+python .\app.py
+```
+```cmd
+:: CMD clásico (misma ventana)
+set OPENAI_API_KEY=sk-xxxxx
+python app.py
+```
+
+Notas:
+- gTTS no soporta voces Kichwa; se usa español como aproximación cuando `lang` es Kichwa.
+- Para usar micrófono en el navegador, abre la app en `http://127.0.0.1:5000` o `http://localhost` (contexto seguro) y concede el permiso.
+
+### Cómo obtener y gestionar acceso a la API (OpenAI Whisper)
+
+1) Crear cuenta y obtener clave
+- Crea o inicia sesión en tu cuenta de OpenAI.
+- Genera una API key desde la sección de API keys del panel de control.
+- Copia la clave (formato similar a `sk-...`). Guárdala de forma segura.
+
+2) Establecer la clave en cada dispositivo
+- La app lee `OPENAI_API_KEY` del entorno. Debes configurarla en el dispositivo donde se ejecuta el servidor.
+
+Windows
+- PowerShell (por sesión):
 ```powershell
 $env:OPENAI_API_KEY = 'sk-xxxxx'
 python .\app.py
 ```
+- CMD (por sesión):
+```cmd
+set OPENAI_API_KEY=sk-xxxxx
+python app.py
+```
+- Permanente (todas las sesiones): Panel de Control → Sistema → Configuración avanzada del sistema → Variables de entorno → Nueva variable de usuario/sistema `OPENAI_API_KEY` con tu clave. Cierra y abre terminal para que tome efecto.
 
-Nota sobre TTS: gTTS no soporta voces Kichwa; se usa español como aproximación cuando `lang` es Kichwa.
+Linux/macOS
+- Por sesión:
+```bash
+export OPENAI_API_KEY=sk-xxxxx
+python app.py
+```
+- Permanente: agrega a tu archivo de perfil (`~/.bashrc`, `~/.zshrc`):
+```bash
+export OPENAI_API_KEY=sk-xxxxx
+```
+Luego abre una nueva terminal.
+
+3) Verificar que la app ve la clave
+- Inicia la app desde la misma terminal donde definiste la variable y prueba grabar. Si no detecta la clave, revisa que ejecutaste `python app.py` en la misma sesión.
+
+4) Buenas prácticas
+- No compartas tu API key ni la subas a repositorios.
+- Si vas a distribuir la app a otras máquinas, no hardcodees la clave; indica a cada usuario cómo definir `OPENAI_API_KEY` en su sistema.
+- Si despliegas en un servidor, configura la variable en el servicio (por ejemplo, archivo `.service` de systemd o variables del hosting).
+
+## Transcripción de voz: modos y orden de fallback
+
+La app prioriza no requerir instalación de ffmpeg ni claves:
+
+1) Web Speech API (gratis, en el navegador)
+- Si el navegador soporta `SpeechRecognition`/`webkitSpeechRecognition`, la transcripción se hace localmente.
+- Recomendado: Chrome/Edge. Firefox no la soporta.
+- Idiomas configurados: `es-EC` para español y `qu-EC` para Kichwa. Algunos navegadores podrían no reconocer bien `qu-EC`.
+
+2) API remota (si hay `OPENAI_API_KEY`)
+- Si no hay Web Speech API o esta falla, el servidor intenta transcripción remota con OpenAI (sin necesidad de ffmpeg).
+
+3) Flujo local con conversión (requiere ffmpeg)
+- Si lo anterior falla y tienes `ffmpeg` en PATH, el servidor convierte a WAV y usa reconocimiento local.
 
 ## Uso de la aplicación
 
 - Inicio (Traductor): ingresa texto o usa micrófono, la app detecta idioma (heurística) y traduce; puedes reproducir el resultado con TTS.
 - Diccionario (`/diccionario`): busca, ordena, pagina, agrega/edita/elimina términos. Importa CSV (`español,kichwa`) y exporta CSV/JSON. Consulta metadatos, historial y backups.
 - Estudiar (`/estudiar`): practica con flashcards (ES→QU / QU→ES) o quizzes de opción múltiple.
+
+Consejos para micrófono
+- Si ves "Permiso denegado", haz clic en el candado de la barra de direcciones y permite el micrófono.
+- Si aparece "contexto inseguro", usa `http://127.0.0.1:5000` o `http://localhost:5000`.
+- Cierra aplicaciones que estén usando el micrófono (Zoom, Teams, etc.).
 
 ## API (resumen con ejemplos)
 

@@ -35,6 +35,70 @@ DICT_LOCK = threading.RLock()
 def _now_iso():
     return datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'
 
+def _utcnow():
+    return datetime.utcnow()
+
+def _file_mtime_utc(path):
+    try:
+        ts = os.path.getmtime(path)
+        return datetime.utcfromtimestamp(ts)
+    except Exception:
+        return None
+
+def _cleanup_audio_folder(ttl_minutes=60):
+    """Elimina archivos en AUDIO_FOLDER más antiguos que ttl_minutes.
+
+    Se ejecuta periódicamente en un hilo daemon.
+    """
+    try:
+        now = _utcnow()
+        ttl = max(1, int(ttl_minutes))
+        for name in os.listdir(AUDIO_FOLDER):
+            path = os.path.join(AUDIO_FOLDER, name)
+            if not os.path.isfile(path):
+                continue
+            mtime = _file_mtime_utc(path)
+            if not mtime:
+                continue
+            age_min = (now - mtime).total_seconds() / 60.0
+            if age_min > ttl:
+                try:
+                    os.remove(path)
+                except Exception:
+                    pass
+    except Exception:
+        pass
+
+def _start_audio_cleanup_thread():
+    """Lanza un hilo que limpia la carpeta de audio cada cierto intervalo."""
+    try:
+        ttl_env = os.getenv('AUDIO_TTL_MINUTES')
+        try:
+            ttl_minutes = int(ttl_env) if ttl_env else 60
+        except Exception:
+            ttl_minutes = 60
+
+        interval_env = os.getenv('AUDIO_CLEAN_INTERVAL_SECONDS')
+        try:
+            interval_seconds = int(interval_env) if interval_env else 900  # 15 min
+        except Exception:
+            interval_seconds = 900
+
+        def _loop():
+            import time
+            while True:
+                _cleanup_audio_folder(ttl_minutes)
+                try:
+                    time.sleep(max(60, interval_seconds))
+                except Exception:
+                    # si sleep falla, continuar
+                    pass
+
+        t = threading.Thread(target=_loop, daemon=True)
+        t.start()
+    except Exception:
+        pass
+
 def _safe_read_json(path, default):
     try:
         if os.path.exists(path):
@@ -257,6 +321,8 @@ try:
     ensure_meta_initialized()
     if not os.path.exists(HISTORY_PATH):
         _safe_write_json(HISTORY_PATH, [])
+    # Iniciar limpieza periódica de audios
+    _start_audio_cleanup_thread()
 except Exception:
     pass
 
@@ -318,6 +384,42 @@ def speech_to_text():
     recognizer = sr.Recognizer()
     temp_converted = None
     try:
+        # Ruta remota primero (evita depender de ffmpeg). Si hay API key, enviamos el archivo tal cual.
+        try:
+            api_key = os.getenv('OPENAI_API_KEY')
+            provider = (os.getenv('TRANSCRIBE_PROVIDER') or 'openai').lower()
+        except Exception:
+            api_key = None
+            provider = 'openai'
+
+        if api_key and provider == 'openai':
+            try:
+                headers = {'Authorization': f'Bearer {api_key}'}
+                with open(filepath, 'rb') as f_audio:
+                    files = {'file': (os.path.basename(filepath), f_audio)}
+                    data = {'model': 'whisper-1'}
+                    if language_code:
+                        try:
+                            data['language'] = language_code.split('-')[0]
+                        except Exception:
+                            pass
+                    resp_api = requests.post('https://api.openai.com/v1/audio/transcriptions', headers=headers, files=files, data=data, timeout=120)
+
+                if resp_api.ok:
+                    try:
+                        resp_json = resp_api.json()
+                        text = resp_json.get('text', '')
+                        return jsonify({'text': text})
+                    except Exception as parse_e:
+                        # continuar con flujo local si falla el parseo
+                        pass
+                else:
+                    # Si la API remota falla, continuar con flujo local
+                    pass
+            except Exception:
+                # Continuar con flujo local
+                pass
+
         # Intento directo
         try:
             with sr.AudioFile(filepath) as source:
@@ -337,7 +439,7 @@ def speech_to_text():
                 suggestion = None
                 try:
                     if isinstance(conv_err, FileNotFoundError) or 'ffmpeg' in str(conv_err).lower():
-                        suggestion = 'Instale ffmpeg desde https://ffmpeg.org y asegúrese de que esté en el PATH del sistema'
+                        suggestion = 'Configure la variable OPENAI_API_KEY para usar transcripción remota sin ffmpeg, o instale ffmpeg desde https://ffmpeg.org y agréguelo al PATH'
                 except Exception:
                     pass
                 # Intentar fallback usando una API de transcripción remota (p.ej. OpenAI Whisper)
@@ -409,6 +511,12 @@ def speech_to_text():
         try:
             if temp_converted and os.path.exists(temp_converted):
                 os.remove(temp_converted)
+        except Exception:
+            pass
+        # Eliminar el archivo original subido/guardado para no acumular
+        try:
+            if filepath and os.path.exists(filepath):
+                os.remove(filepath)
         except Exception:
             pass
 

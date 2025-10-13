@@ -6,6 +6,8 @@ let mediaRecorder = null;
 let audioChunks = [];
 let lastTranslation = '';
 let localDict = null;
+let recognition = null;
+let recognitionActive = false;
 
 // Referencias DOM
 const btnKichwa = document.getElementById('btn-kichwa');
@@ -18,6 +20,68 @@ const btnTraducirManual = document.getElementById('btn-traducir-manual');
 const recordingIndicator = document.querySelector('.recording-indicator');
 const srcLangInputs = document.querySelectorAll('input[name="src-lang"]');
 const status = document.getElementById('status');
+
+// Mic helpers
+const supportsMediaDevices = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+
+function humanizeGetUserMediaError(error) {
+    const name = error && (error.name || error.code) || '';
+    const msg = (error && error.message) || '';
+    // Mensajes específicos por tipo de error
+    switch (name) {
+        case 'NotAllowedError':
+        case 'PermissionDeniedError':
+            return 'Permiso de micrófono denegado. Haz clic en el candado de la barra de direcciones y permite el micrófono para este sitio.';
+        case 'NotFoundError':
+        case 'DevicesNotFoundError':
+            return 'No se encontró un micrófono. Verifica que el dispositivo esté conectado y habilitado en el sistema.';
+        case 'NotReadableError':
+        case 'TrackStartError':
+            return 'El micrófono está siendo usado por otra aplicación. Ciérrala e inténtalo de nuevo.';
+        case 'OverconstrainedError':
+            return 'No se pudo satisfacer las restricciones de audio. Intenta con otro micrófono o revisa la configuración de audio del sistema.';
+        case 'SecurityError':
+            return 'Bloqueado por seguridad del navegador. Asegúrate de usar la app en un contexto seguro (https o localhost).';
+        default:
+            if (!window.isSecureContext) {
+                return 'El navegador requiere un contexto seguro para usar el micrófono. Abre la app en https o en http://localhost/127.0.0.1.';
+            }
+            if (!supportsMediaDevices) {
+                return 'Tu navegador no soporta captura de audio (getUserMedia). Actualiza a una versión moderna.';
+            }
+            return msg || 'Error al acceder al micrófono.';
+    }
+}
+
+async function getMicrophoneStream() {
+    if (!supportsMediaDevices) {
+        throw new Error('getUserMedia no soportado');
+    }
+    if (!window.isSecureContext) {
+        // 127.0.0.1 y localhost cuentan como seguros en la mayoría de navegadores
+        throw new Error('Contexto inseguro');
+    }
+    // Intentar leer permiso si está disponible (no bloqueante)
+    try {
+        if (navigator.permissions && navigator.permissions.query) {
+            const p = await navigator.permissions.query({ name: 'microphone' });
+            if (p.state === 'denied') {
+                throw new Error('Permiso de micrófono denegado en el navegador');
+            }
+        }
+    } catch (_) {
+        // Ignorar: la API de permisos no es estándar en todos los navegadores
+    }
+
+    const constraints = {
+        audio: {
+            echoCancellation: true,
+            noiseSuppression: true,
+            channelCount: 1
+        }
+    };
+    return await navigator.mediaDevices.getUserMedia(constraints);
+}
 
 // Cargar diccionario local una vez
 async function loadLocalDictionary() {
@@ -172,7 +236,9 @@ function renderDetected(data) {
 
 function updateRecordingState(recording) {
     isRecording = recording;
-    recordingIndicator.classList.toggle('d-none', !recording);
+    if (recordingIndicator) {
+        recordingIndicator.classList.toggle('d-none', !recording);
+    }
     btnKichwa.disabled = recording;
     btnEspanol.disabled = recording;
     btnTraducirManual.disabled = recording;
@@ -223,8 +289,56 @@ async function handleManualTranslate() {
 // Manejo de grabación de voz
 async function startRecording(lang) {
     try {
-        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        mediaRecorder = new MediaRecorder(stream);
+        // 1) Intentar Web Speech API (gratis, en el navegador)
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (SpeechRecognition) {
+            if (recognitionActive) return;
+            recognition = new SpeechRecognition();
+            recognition.lang = lang === 'es' ? 'es-EC' : 'qu-EC';
+            recognition.interimResults = true;
+            recognition.maxAlternatives = 1;
+
+            let finalText = '';
+            recognition.onstart = () => {
+                recognitionActive = true;
+                updateRecordingState(true);
+                setStatus('Escuchando...');
+            };
+            recognition.onresult = async (event) => {
+                let transcript = '';
+                for (let i = event.resultIndex; i < event.results.length; i++) {
+                    transcript += event.results[i][0].transcript || '';
+                    if (event.results[i].isFinal) finalText = transcript;
+                }
+                textoOriginal.value = transcript.trim();
+            };
+            recognition.onerror = (e) => {
+                console.warn('SpeechRecognition error', e);
+            };
+            recognition.onend = async () => {
+                recognitionActive = false;
+                updateRecordingState(false);
+                setStatus('');
+                const used = (finalText || textoOriginal.value || '').trim();
+                if (used) {
+                    const destLang = lang === 'es' ? 'qu' : 'es';
+                    const translation = await translateText(used, lang, destLang);
+                    textoTraducido.value = translation;
+                    lastTranslation = translation;
+                }
+            };
+            recognition.start();
+            return;
+        }
+
+        // 2) Fallback al flujo actual (envía Blob al servidor)
+        const stream = await getMicrophoneStream();
+        const options = {};
+        if (window.MediaRecorder && MediaRecorder.isTypeSupported) {
+            if (MediaRecorder.isTypeSupported('audio/webm')) options.mimeType = 'audio/webm';
+            else if (MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) options.mimeType = 'audio/webm;codecs=opus';
+        }
+        mediaRecorder = new MediaRecorder(stream, options);
         audioChunks = [];
 
         mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
@@ -250,14 +364,11 @@ async function startRecording(lang) {
                     lastTranslation = translation;
                     setStatus('');
                 } else {
-                    // Lanzar la respuesta completa para que el bloque catch pueda mostrar sugerencias/ detalles
                     throw new Error(JSON.stringify(data));
                 }
             } catch (err) {
                 console.error('Error procesando audio:', err);
                 setStatus('Error al procesar audio');
-
-                // Intentar leer detalles/sugerencias del servidor (p.ej. instalar ffmpeg)
                 let alertMsg = 'Error al procesar el audio';
                 try {
                     const parsed = typeof err.message === 'string' ? JSON.parse(err.message) : err;
@@ -268,10 +379,7 @@ async function startRecording(lang) {
                     } else if (parsed && parsed.error) {
                         alertMsg += ': ' + parsed.error;
                     }
-                } catch (e) {
-                    // no-op: err.message no es JSON
-                }
-
+                } catch (e) {}
                 showAlert(alertMsg, 'danger');
             }
 
@@ -283,12 +391,17 @@ async function startRecording(lang) {
         
     } catch (err) {
         console.error('Error al iniciar grabación:', err);
-        showAlert('Error al acceder al micrófono', 'danger');
+        const friendly = humanizeGetUserMediaError(err);
+        showAlert(friendly, 'danger');
         updateRecordingState(false);
     }
 }
 
 function stopRecording() {
+    if (recognition && recognitionActive) {
+        try { recognition.stop(); } catch (_) {}
+        recognitionActive = false;
+    }
     if (mediaRecorder && isRecording) {
         mediaRecorder.stop();
         updateRecordingState(false);
