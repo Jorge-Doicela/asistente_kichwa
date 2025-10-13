@@ -8,6 +8,7 @@ let lastTranslation = '';
 let localDict = null;
 let recognition = null;
 let recognitionActive = false;
+let currentRecordingLang = null;
 
 // Referencias DOM
 const btnKichwa = document.getElementById('btn-kichwa');
@@ -239,8 +240,9 @@ function updateRecordingState(recording) {
     if (recordingIndicator) {
         recordingIndicator.classList.toggle('d-none', !recording);
     }
-    btnKichwa.disabled = recording;
-    btnEspanol.disabled = recording;
+    // Mantener botones de idioma habilitados para permitir detener con segundo clic
+    btnKichwa.disabled = false;
+    btnEspanol.disabled = false;
     btnTraducirManual.disabled = recording;
 }
 
@@ -297,12 +299,15 @@ async function startRecording(lang) {
             recognition.lang = lang === 'es' ? 'es-EC' : 'qu-EC';
             recognition.interimResults = true;
             recognition.maxAlternatives = 1;
+            // Intentar mantener la sesión de reconocimiento activa
+            recognition.continuous = true;
 
             let finalText = '';
             recognition.onstart = () => {
                 recognitionActive = true;
                 updateRecordingState(true);
                 setStatus('Escuchando...');
+                currentRecordingLang = lang;
             };
             recognition.onresult = async (event) => {
                 let transcript = '';
@@ -319,6 +324,7 @@ async function startRecording(lang) {
                 recognitionActive = false;
                 updateRecordingState(false);
                 setStatus('');
+                currentRecordingLang = null;
                 const used = (finalText || textoOriginal.value || '').trim();
                 if (used) {
                     const destLang = lang === 'es' ? 'qu' : 'es';
@@ -388,6 +394,7 @@ async function startRecording(lang) {
 
         mediaRecorder.start();
         updateRecordingState(true);
+        currentRecordingLang = lang;
         
     } catch (err) {
         console.error('Error al iniciar grabación:', err);
@@ -406,16 +413,32 @@ function stopRecording() {
         mediaRecorder.stop();
         updateRecordingState(false);
     }
+    currentRecordingLang = null;
 }
 
-// Event listeners
-btnKichwa.addEventListener('mousedown', () => startRecording('qu'));
-btnKichwa.addEventListener('mouseup', stopRecording);
-btnKichwa.addEventListener('mouseleave', stopRecording);
+// Event listeners (toggle: clic para iniciar, clic para detener)
+btnKichwa.addEventListener('click', () => {
+    if (isRecording && currentRecordingLang === 'qu') {
+        stopRecording();
+    } else if (!isRecording) {
+        startRecording('qu');
+    } else {
+        // Si se está grabando en otro idioma, detener primero y luego iniciar
+        stopRecording();
+        startRecording('qu');
+    }
+});
 
-btnEspanol.addEventListener('mousedown', () => startRecording('es'));
-btnEspanol.addEventListener('mouseup', stopRecording);
-btnEspanol.addEventListener('mouseleave', stopRecording);
+btnEspanol.addEventListener('click', () => {
+    if (isRecording && currentRecordingLang === 'es') {
+        stopRecording();
+    } else if (!isRecording) {
+        startRecording('es');
+    } else {
+        stopRecording();
+        startRecording('es');
+    }
+});
 
 // Event listener para traducción manual
 btnTraducirManual.addEventListener('click', handleManualTranslate);
