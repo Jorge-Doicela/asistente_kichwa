@@ -199,6 +199,42 @@ Exportación
 Backups
 - Se crean automáticamente antes y después de cambios masivos (incluye metadatos: versión, entradas, timestamps).
 
+## Reglas para añadir palabras (UI, API y CSV)
+
+Este sistema aplica reglas coherentes al agregar/editar/importar para mantener la calidad del diccionario:
+
+- Clave en español
+  - Se guarda en minúsculas y con espacios tal cual fueron escritos (se usa como clave única).
+  - En la UI y API (`/api/dictionary/add|update`) se hace `trim()` y `lower()` al español.
+
+- Valor en Kichwa
+  - Se guarda tal como se escribe (sin forzar a minúsculas). Se recomienda usar `ñ` cuando corresponda y guiones `-` para separar morfemas/sufijos (ej. `mikuy-pak`).
+  - La búsqueda/heurística normaliza tildes (las quita) pero conserva `ñ`.
+
+- Coincidencias y traducción
+  - Español → Kichwa: se priorizan coincidencias por frases más largas; se usa normalización (tildes fuera, `ñ` preservada) y guiones normalizados a uno.
+  - Kichwa → Español: se tokeniza el texto en morfemas y se intentan sustituciones por tokens exactos normalizados. Usar guiones en el Kichwa ayuda a mejorar la segmentación.
+
+- Importación CSV (`/api/dictionary/import`)
+  - Formato: sin cabecera; cada fila `español,kichwa` (2 columnas mínimas). UTF-8 preferido (hay fallback a Latin-1). Se elimina BOM si existe.
+  - Filas inválidas (vacías, con menos de 2 columnas, o con español/kichwa vacío) se omiten.
+  - Duplicados dentro del mismo archivo (misma pareja `español,kichwa`) se omiten y se cuentan como `skipped_duplicates`.
+  - Si la clave en español ya existe:
+    - Si el valor es idéntico, se marca como duplicado y se omite.
+    - Si el valor es distinto, se ACTUALIZA y se registra en el historial como `bulk-update`.
+  - Si la clave en español no existe, se AGREGA y se registra como `bulk-add`.
+
+- Edición/renombrado (`/api/dictionary/update`)
+  - Puedes cambiar el Kichwa y opcionalmente renombrar la clave en español (`spanish_new`).
+  - Se registra historial y se incrementa versión/meta.
+
+- Buenas prácticas de modelado
+  - Evita múltiples significados en un solo valor. Si necesitas variantes, puedes crear varias entradas con desambiguadores en español: `banco (dinero)`, `banco (asiento)`.
+  - Usa guiones para morfemas/sufijos frecuentes en Kichwa. Ejemplos de sufijos que el sistema considera en la segmentación: `-mi`, `-shi`, `-ka`, `-ta`, `-n`, `-pak`, `-sapa`, `-kuna`.
+  - Evita tildes en Kichwa (la normalización ya las quita en coincidencias); sí usa `ñ` cuando corresponda.
+
+Cada operación que cambia el diccionario crea backup y actualiza metadatos (versión, conteo, última actualización) automáticamente.
+
 ## Estructura del proyecto
 
 ```
