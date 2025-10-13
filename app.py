@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import os
 import speech_recognition as sr
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 from gtts import gTTS
 import requests
 import uuid
@@ -327,7 +327,7 @@ except Exception:
     pass
 
 # Inicializar traductor
-translator = Translator()
+translator = GoogleTranslator()
 
 @app.route('/')
 def index():
@@ -571,8 +571,28 @@ def translate():
                     return jsonify({'translation': out})
 
         # Fallback a Google Translate
-        translation = translator.translate(text, src=src, dest=dest)
-        resp = {'translation': translation.text}
+        try:
+            # Mapear códigos de idioma para deep-translator
+            lang_map = {
+                'es': 'es',
+                'qu': 'qu',  # deep-translator soporta quechua
+                'qu-EC': 'qu',
+                'es-EC': 'es',
+                'es-ES': 'es'
+            }
+            
+            src_lang = lang_map.get(src, 'auto')
+            dest_lang = lang_map.get(dest, 'es')
+            
+            if src_lang == 'auto':
+                # Para autodetección, usar el idioma detectado
+                src_lang = detected if 'detected' in locals() else 'es'
+            
+            translation = translator.translate(text, source=src_lang, target=dest_lang)
+            resp = {'translation': translation}
+        except Exception as translate_error:
+            # Si falla la traducción, devolver texto original
+            resp = {'translation': text, 'translate_error': str(translate_error)}
         try:
             if 'detected' in locals():
                 resp['detected_lang'] = detected
