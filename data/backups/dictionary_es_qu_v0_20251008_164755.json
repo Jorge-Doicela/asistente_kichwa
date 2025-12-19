@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "reason": "import-csv",
+    "created_at": "2025-10-08T16:47:55Z",
+    "source": "live-dictionary",
+    "version": 0,
+    "entries": 30
+  },
+  "dictionary": {
+    "hola": "rimaykullayki",
+    "buenos dias": "allin killa",
+    "buenos días": "allin killa",
+    "buen día": "allin killa",
+    "buenas noches": "allin tuta",
+    "gracias": "yuspagara",
+    "por favor": "pakcha",
+    "¿cómo estás?": "imashalla?",
+    "como estas": "imashalla",
+    "cómo estás": "imashalla",
+    "amigo": "mashi",
+    "amiga": "mashika",
+    "sí": "ari",
+    "no": "manam",
+    "te quiero": "kuyayki",
+    "me llamo": "ñuka sutin",
+    "mi nombre es": "ñuka sutin",
+    "dónde": "maypi",
+    "cuando": "pimashka",
+    "qué": "imata",
+    "por qué": "ima chay",
+    "bien": "allin",
+    "mal": "mana allin",
+    "salud": "kawsay",
+    "agua": "yaku",
+    "comida": "mikhuna",
+    "familia": "ayllu",
+    "trabajo": "llank'ay",
+    "hola, ¿cómo estás?": "rimaykullayki, imashalla?",
+    "buenas tardes": "allin ch'isi"
+  }
+}

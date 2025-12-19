@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #059669;
+    --accent-color: #f59e0b;
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header: logo y título de la aplicación */
+.app-logo {
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 4px 12px rgba(2,6,23,0.08);
+    background: white;
+    padding: 6px;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .app-logo { width: 48px; height: 48px; }
+    .app-title { font-size: 1.1rem; }
+    header[role="banner"] { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    nav[aria-label="Navegación principal"] { width: 100%; display: flex; gap: 0.5rem; justify-content: flex-end; }
+}
+
+/* Header y contenedor principal */
+.container {
+    max-width: 1000px !important;
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* Botones principales */
+.btn {
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn-success {
+    background: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(5, 150, 105, 0.1);
+}
+.btn-success:hover {
+    background: #047857;
+    transform: translateY(-1px);
+}
+
+.btn-warning {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 2px 4px rgba(245, 158, 11, 0.1);
+}
+.btn-warning:hover {
+    background: #d97706;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Toggle switch personalizado */
+.form-switch {
+    padding-left: 3em;
+}
+.form-check-input {
+    width: 3em !important;
+    height: 1.5em !important;
+    background-color: #e5e7eb;
+    border: none;
+    cursor: pointer;
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+}
+.form-check-input:focus {
+    border: none;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+/* Campos de texto y áreas */
+.form-control, .form-select {
+    border-radius: var(--border-radius);
+    border: 2px solid #e5e7eb;
+    padding: 0.75rem;
+    transition: var(--transition);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Nuevos estilos inspirados en Google Translate */
+.translate-wrapper {
+    background: transparent;
+}
+
+.translate-wrapper .panel-input,
+.translate-wrapper .panel-output {
+    border-radius: 12px;
+    border: 1px solid rgba(15,23,42,0.04);
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+.lang-pills { display: inline-flex; gap: 6px; }
+.lang-pill {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(15,23,42,0.03);
+    border: 1px solid transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+.lang-pill:hover { background: rgba(15,23,42,0.06); }
+.btn-check:checked + .lang-pill {
+    background: var(--primary-color);
+    color: white;
+    border-color: rgba(37,99,235,0.15);
+}
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    min-width: 40px;
+}
+
+.input-area { min-height: 160px; font-size: 0.98rem; }
+.output-area { min-height: 160px; background: #fbfdff; }
+
+.panel-input .form-label.small,
+.panel-output .form-label.small { color: #475569; font-weight: 600; }
+
+.translate-wrapper .btn-primary { padding: 0.6rem 1rem; }
+
+/* Ajustes para el status y grabación */
+.recording-indicator { gap: 0.5rem; }
+.recording-indicator .recording-pulse { width: 10px; height: 10px; }
+
+/* Lista de archivos subidos eliminada del diseño actual */
+
+@media (max-width: 768px) {
+    .btn-circle { width: 36px; height: 36px; }
+    .input-area, .output-area { min-height: 120px; }
+}
+
+/* Estado y Feedback */
+#status {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+/* Animaciones y estados de grabación */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+@keyframes recording-pulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.btn.recording {
+    animation: pulse 1.5s infinite;
+    background-color: #ef4444 !important;
+    border-color: #ef4444 !important;
+}
+
+.recording-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: #ef4444;
+    margin-left: 1rem;
+}
+
+.recording-indicator .recording-pulse {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    animation: recording-pulse 2s infinite;
+}
+
+/* Estado visual de la grabación */
+.btn-kichwa.recording,
+.btn-espanol.recording {
+    background-color: #ef4444 !important;
+    border-color: #ef4444 !important;
+    color: white !important;
+}
+
+/* Estados del indicador de status */
+#status {
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+}
+
+#status:empty {
+    display: none;
+}
+
+/* Diferentes estados del status */
+#status[data-state="recording"] {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+#status[data-state="processing"] {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+}
+
+#status[data-state="success"] {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+
+#status[data-state="error"] {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+/* Reglas relacionadas con la lista de archivos eliminadas */
+
+/* Diccionario: ajustar altura de tabla y paginación */
+.table-hover tbody tr:hover { background-color: rgba(15,23,42,0.03); }
+.pagination .page-link { border-radius: 8px; }
+.pagination .page-item.active .page-link { background-color: var(--primary-color); border-color: var(--primary-color); }

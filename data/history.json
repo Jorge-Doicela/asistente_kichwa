@@ -1,0 +1,8615 @@
+[
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "adiós",
+    "kichwa_before": null,
+    "kichwa_after": "kutiyachkani",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hasta luego",
+    "kichwa_before": null,
+    "kichwa_after": "kausarishun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "muchas gracias",
+    "kichwa_before": null,
+    "kichwa_after": "ashta yuspagara",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "de nada",
+    "kichwa_before": null,
+    "kichwa_after": "ama shina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "perdón",
+    "kichwa_before": null,
+    "kichwa_after": "pañapakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lo siento",
+    "kichwa_before": null,
+    "kichwa_after": "sorry-ni",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "muy bien",
+    "kichwa_before": null,
+    "kichwa_after": "ashta allin",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "más o menos",
+    "kichwa_before": null,
+    "kichwa_after": "ashalla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿qué?",
+    "kichwa_before": null,
+    "kichwa_after": "imata?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿quién?",
+    "kichwa_before": null,
+    "kichwa_after": "pi?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿dónde?",
+    "kichwa_before": null,
+    "kichwa_after": "maypi?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cuándo?",
+    "kichwa_before": null,
+    "kichwa_after": "imashina pacha?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿por qué?",
+    "kichwa_before": null,
+    "kichwa_after": "ima chay?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cuánto?",
+    "kichwa_before": null,
+    "kichwa_after": "mashna?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-update",
+    "spanish_before": "hola",
+    "spanish_after": "hola",
+    "kichwa_before": "rimaykullayki",
+    "kichwa_after": "imashina kanki?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cómo te llamas?",
+    "kichwa_before": null,
+    "kichwa_after": "ima shuti kanki?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mucho gusto",
+    "kichwa_before": null,
+    "kichwa_after": "kushi shunkuwan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "encantado",
+    "kichwa_before": null,
+    "kichwa_after": "kushi shunku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "madre",
+    "kichwa_before": null,
+    "kichwa_after": "mama",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "padre",
+    "kichwa_before": null,
+    "kichwa_after": "tayta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermano (de hombre)",
+    "kichwa_before": null,
+    "kichwa_after": "wayqi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermano (de mujer)",
+    "kichwa_before": null,
+    "kichwa_after": "turi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermana (de hombre)",
+    "kichwa_before": null,
+    "kichwa_after": "ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermana (de mujer)",
+    "kichwa_before": null,
+    "kichwa_after": "ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hijo",
+    "kichwa_before": null,
+    "kichwa_after": "chauri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hija",
+    "kichwa_before": null,
+    "kichwa_after": "ususi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abuelo",
+    "kichwa_before": null,
+    "kichwa_after": "awki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abuela",
+    "kichwa_before": null,
+    "kichwa_after": "mamita",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tío",
+    "kichwa_before": null,
+    "kichwa_after": "mama tayta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tía",
+    "kichwa_before": null,
+    "kichwa_after": "mama ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "primo",
+    "kichwa_before": null,
+    "kichwa_after": "mashi wayqi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "prima",
+    "kichwa_before": null,
+    "kichwa_after": "mashi ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "niño",
+    "kichwa_before": null,
+    "kichwa_after": "wawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "niña",
+    "kichwa_before": null,
+    "kichwa_after": "wawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hombre",
+    "kichwa_before": null,
+    "kichwa_after": "karri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mujer",
+    "kichwa_before": null,
+    "kichwa_after": "warmi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "persona",
+    "kichwa_before": null,
+    "kichwa_after": "runa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "gente",
+    "kichwa_before": null,
+    "kichwa_after": "runakuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:27Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "maestro",
+    "kichwa_before": null,
+    "kichwa_after": "yachachiq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estudiante",
+    "kichwa_before": null,
+    "kichwa_after": "yachakuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escuela",
+    "kichwa_before": null,
+    "kichwa_after": "yachay wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "colegio",
+    "kichwa_before": null,
+    "kichwa_after": "yachay wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "universidad",
+    "kichwa_before": null,
+    "kichwa_after": "yachay yachana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "libro",
+    "kichwa_before": null,
+    "kichwa_after": "panka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuaderno",
+    "kichwa_before": null,
+    "kichwa_after": "killka panka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lápiz",
+    "kichwa_before": null,
+    "kichwa_after": "qillka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lapicero",
+    "kichwa_before": null,
+    "kichwa_after": "qillkana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "borrador",
+    "kichwa_before": null,
+    "kichwa_after": "pichana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tiza",
+    "kichwa_before": null,
+    "kichwa_after": "khillu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pizarra",
+    "kichwa_before": null,
+    "kichwa_after": "killka rumi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "silla",
+    "kichwa_before": null,
+    "kichwa_after": "tiana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mesa",
+    "kichwa_before": null,
+    "kichwa_after": "misa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "puerta",
+    "kichwa_before": null,
+    "kichwa_after": "punka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ventana",
+    "kichwa_before": null,
+    "kichwa_after": "winchu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "casa",
+    "kichwa_before": null,
+    "kichwa_after": "wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuarto",
+    "kichwa_before": null,
+    "kichwa_after": "uta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pueblo",
+    "kichwa_before": null,
+    "kichwa_after": "llakta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ciudad",
+    "kichwa_before": null,
+    "kichwa_after": "hatun llaqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "camino",
+    "kichwa_before": null,
+    "kichwa_after": "ñan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carretera",
+    "kichwa_before": null,
+    "kichwa_after": "ñan hatun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carro",
+    "kichwa_before": null,
+    "kichwa_after": "karu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bus",
+    "kichwa_before": null,
+    "kichwa_after": "awtobus",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bicicleta",
+    "kichwa_before": null,
+    "kichwa_after": "suklla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "moto",
+    "kichwa_before": null,
+    "kichwa_after": "motukaruta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "avión",
+    "kichwa_before": null,
+    "kichwa_after": "wayra machina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "barco",
+    "kichwa_before": null,
+    "kichwa_after": "hatun balsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pan",
+    "kichwa_before": null,
+    "kichwa_after": "tanta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "maíz",
+    "kichwa_before": null,
+    "kichwa_after": "sara",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "papa",
+    "kichwa_before": null,
+    "kichwa_after": "chugllu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arroz",
+    "kichwa_before": null,
+    "kichwa_after": "arwas",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carne",
+    "kichwa_before": null,
+    "kichwa_after": "aycha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pollo",
+    "kichwa_before": null,
+    "kichwa_after": "challwa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pescado",
+    "kichwa_before": null,
+    "kichwa_after": "challwa aycha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fruta",
+    "kichwa_before": null,
+    "kichwa_after": "ruru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "manzana",
+    "kichwa_before": null,
+    "kichwa_after": "mazana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "plátano",
+    "kichwa_before": null,
+    "kichwa_after": "rima",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "naranja",
+    "kichwa_before": null,
+    "kichwa_after": "laranja",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "leche",
+    "kichwa_before": null,
+    "kichwa_after": "lliqlla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "queso",
+    "kichwa_before": null,
+    "kichwa_after": "kisu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "huevo",
+    "kichwa_before": null,
+    "kichwa_after": "ruru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sal",
+    "kichwa_before": null,
+    "kichwa_after": "kachi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "azúcar",
+    "kichwa_before": null,
+    "kichwa_after": "asucar",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aceite",
+    "kichwa_before": null,
+    "kichwa_after": "asaytu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "café",
+    "kichwa_before": null,
+    "kichwa_after": "kapi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "te",
+    "kichwa_before": null,
+    "kichwa_after": "ti",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sopa",
+    "kichwa_before": null,
+    "kichwa_after": "upa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "chicha",
+    "kichwa_before": null,
+    "kichwa_after": "aswa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mate",
+    "kichwa_before": null,
+    "kichwa_after": "mati",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "desayuno",
+    "kichwa_before": null,
+    "kichwa_after": "aya mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "almuerzo",
+    "kichwa_before": null,
+    "kichwa_after": "chishi mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cena",
+    "kichwa_before": null,
+    "kichwa_after": "tuta mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hambre",
+    "kichwa_before": null,
+    "kichwa_after": "yarapay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sed",
+    "kichwa_before": null,
+    "kichwa_after": "yakuchkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "frío",
+    "kichwa_before": null,
+    "kichwa_after": "chiri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "calor",
+    "kichwa_before": null,
+    "kichwa_after": "rupay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lluvia",
+    "kichwa_before": null,
+    "kichwa_after": "para",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nieve",
+    "kichwa_before": null,
+    "kichwa_after": "rit'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "viento",
+    "kichwa_before": null,
+    "kichwa_after": "wayra",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sol",
+    "kichwa_before": null,
+    "kichwa_after": "inti",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "luna",
+    "kichwa_before": null,
+    "kichwa_after": "killa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estrella",
+    "kichwa_before": null,
+    "kichwa_after": "quyllur",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tierra",
+    "kichwa_before": null,
+    "kichwa_after": "allpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "montaña",
+    "kichwa_before": null,
+    "kichwa_after": "urku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "río",
+    "kichwa_before": null,
+    "kichwa_after": "mayu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "laguna",
+    "kichwa_before": null,
+    "kichwa_after": "qucha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mar",
+    "kichwa_before": null,
+    "kichwa_after": "mama qucha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bosque",
+    "kichwa_before": null,
+    "kichwa_after": "sacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "flor",
+    "kichwa_before": null,
+    "kichwa_after": "t'ika",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "árbol",
+    "kichwa_before": null,
+    "kichwa_after": "malli",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hoja",
+    "kichwa_before": null,
+    "kichwa_after": "raphi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "semilla",
+    "kichwa_before": null,
+    "kichwa_after": "muru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "piedra",
+    "kichwa_before": null,
+    "kichwa_after": "rumi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arena",
+    "kichwa_before": null,
+    "kichwa_after": "sachi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fuego",
+    "kichwa_before": null,
+    "kichwa_after": "nina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "humo",
+    "kichwa_before": null,
+    "kichwa_after": "supa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cielo",
+    "kichwa_before": null,
+    "kichwa_after": "hanaq pacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nube",
+    "kichwa_before": null,
+    "kichwa_after": "puyu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "día",
+    "kichwa_before": null,
+    "kichwa_after": "p'unchay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "noche",
+    "kichwa_before": null,
+    "kichwa_after": "tuta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mañana",
+    "kichwa_before": null,
+    "kichwa_after": "paqarin",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ayer",
+    "kichwa_before": null,
+    "kichwa_after": "qayna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hoy",
+    "kichwa_before": null,
+    "kichwa_after": "kunan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mañana (temprano)",
+    "kichwa_before": null,
+    "kichwa_after": "pakariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "semana",
+    "kichwa_before": null,
+    "kichwa_after": "simana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mes",
+    "kichwa_before": null,
+    "kichwa_after": "killa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "año",
+    "kichwa_before": null,
+    "kichwa_after": "wata",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siempre",
+    "kichwa_before": null,
+    "kichwa_after": "sapanka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nunca",
+    "kichwa_before": null,
+    "kichwa_after": "mana chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ahora",
+    "kichwa_before": null,
+    "kichwa_after": "kunan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "luego",
+    "kichwa_before": null,
+    "kichwa_after": "uku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "antes",
+    "kichwa_before": null,
+    "kichwa_after": "ñawpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "después",
+    "kichwa_before": null,
+    "kichwa_after": "qhipa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "rápido",
+    "kichwa_before": null,
+    "kichwa_after": "utka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lento",
+    "kichwa_before": null,
+    "kichwa_after": "ina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "grande",
+    "kichwa_before": null,
+    "kichwa_after": "hatun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pequeño",
+    "kichwa_before": null,
+    "kichwa_after": "uchilla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nuevo",
+    "kichwa_before": null,
+    "kichwa_after": "musuq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "viejo",
+    "kichwa_before": null,
+    "kichwa_after": "machuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bonito",
+    "kichwa_before": null,
+    "kichwa_after": "sumak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:28Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "feo",
+    "kichwa_before": null,
+    "kichwa_after": "mana sumak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fácil",
+    "kichwa_before": null,
+    "kichwa_after": "llasay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "difícil",
+    "kichwa_before": null,
+    "kichwa_after": "asachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lejos",
+    "kichwa_before": null,
+    "kichwa_after": "karu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cerca",
+    "kichwa_before": null,
+    "kichwa_after": "ayllu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arriba",
+    "kichwa_before": null,
+    "kichwa_after": "hawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abajo",
+    "kichwa_before": null,
+    "kichwa_after": "uray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "adentro",
+    "kichwa_before": null,
+    "kichwa_after": "ukhu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "afuera",
+    "kichwa_before": null,
+    "kichwa_after": "hawapi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aquí",
+    "kichwa_before": null,
+    "kichwa_after": "kaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "allá",
+    "kichwa_before": null,
+    "kichwa_after": "chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "izquierda",
+    "kichwa_before": null,
+    "kichwa_after": "lluq'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "derecha",
+    "kichwa_before": null,
+    "kichwa_after": "paña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "delante",
+    "kichwa_before": null,
+    "kichwa_after": "ñawpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "atrás",
+    "kichwa_before": null,
+    "kichwa_after": "qhipa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "uno",
+    "kichwa_before": null,
+    "kichwa_after": "shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dos",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tres",
+    "kichwa_before": null,
+    "kichwa_after": "kimsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuatro",
+    "kichwa_before": null,
+    "kichwa_after": "taila",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cinco",
+    "kichwa_before": null,
+    "kichwa_after": "pichka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "seis",
+    "kichwa_before": null,
+    "kichwa_after": "suqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siete",
+    "kichwa_before": null,
+    "kichwa_after": "qanchis",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ocho",
+    "kichwa_before": null,
+    "kichwa_after": "pusaq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nueve",
+    "kichwa_before": null,
+    "kichwa_after": "isqun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diez",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "once",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "doce",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a ishkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "trece",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a kimsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "catorce",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a taila",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "quince",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a pichka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dieciséis",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a suqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diecisiete",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a qanchis",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dieciocho",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a pusaq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diecinueve",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a isqun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "veinte",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "veintiuno",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay chunk'a shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "treinta",
+    "kichwa_before": null,
+    "kichwa_after": "kimsa chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuarenta",
+    "kichwa_before": null,
+    "kichwa_after": "taila chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cincuenta",
+    "kichwa_before": null,
+    "kichwa_after": "pichka chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sesenta",
+    "kichwa_before": null,
+    "kichwa_after": "suqta chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "setenta",
+    "kichwa_before": null,
+    "kichwa_after": "qanchis chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ochenta",
+    "kichwa_before": null,
+    "kichwa_after": "pusaq chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "noventa",
+    "kichwa_before": null,
+    "kichwa_after": "isqun chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cien",
+    "kichwa_before": null,
+    "kichwa_after": "pachak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mil",
+    "kichwa_before": null,
+    "kichwa_after": "waranqa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "leer",
+    "kichwa_before": null,
+    "kichwa_after": "killkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escribir",
+    "kichwa_before": null,
+    "kichwa_after": "killkana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hablar",
+    "kichwa_before": null,
+    "kichwa_after": "rimay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escuchar",
+    "kichwa_before": null,
+    "kichwa_after": "uyariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ver",
+    "kichwa_before": null,
+    "kichwa_after": "rikuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ir",
+    "kichwa_before": null,
+    "kichwa_after": "riq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "venir",
+    "kichwa_before": null,
+    "kichwa_after": "hamuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "comer",
+    "kichwa_before": null,
+    "kichwa_after": "mikuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "beber",
+    "kichwa_before": null,
+    "kichwa_after": "upyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dormir",
+    "kichwa_before": null,
+    "kichwa_after": "p'ukuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "correr",
+    "kichwa_before": null,
+    "kichwa_after": "puriy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "caminar",
+    "kichwa_before": null,
+    "kichwa_after": "ñan paway",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "jugar",
+    "kichwa_before": null,
+    "kichwa_after": "aniy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aprender",
+    "kichwa_before": null,
+    "kichwa_after": "yachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "enseñar",
+    "kichwa_before": null,
+    "kichwa_after": "yachachiy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "trabajar",
+    "kichwa_before": null,
+    "kichwa_after": "llank'ay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estudiar",
+    "kichwa_before": null,
+    "kichwa_after": "yachakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abrir",
+    "kichwa_before": null,
+    "kichwa_after": "kichay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cerrar",
+    "kichwa_before": null,
+    "kichwa_after": "wichqay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "encender",
+    "kichwa_before": null,
+    "kichwa_after": "rikchariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "apagar",
+    "kichwa_before": null,
+    "kichwa_after": "wachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "poner",
+    "kichwa_before": null,
+    "kichwa_after": "churay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "quitar",
+    "kichwa_before": null,
+    "kichwa_after": "qapariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ayudar",
+    "kichwa_before": null,
+    "kichwa_after": "yapay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pensar",
+    "kichwa_before": null,
+    "kichwa_after": "yuyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "querer",
+    "kichwa_before": null,
+    "kichwa_after": "munay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "amar",
+    "kichwa_before": null,
+    "kichwa_after": "kuyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "verbo",
+    "kichwa_before": null,
+    "kichwa_after": "ruwanakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "color",
+    "kichwa_before": null,
+    "kichwa_after": "llimp'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "blanco",
+    "kichwa_before": null,
+    "kichwa_after": "yuraq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "negro",
+    "kichwa_before": null,
+    "kichwa_after": "yana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "rojo",
+    "kichwa_before": null,
+    "kichwa_after": "puka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "azul",
+    "kichwa_before": null,
+    "kichwa_after": "anqas",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "verde",
+    "kichwa_before": null,
+    "kichwa_after": "waylla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "amarillo",
+    "kichwa_before": null,
+    "kichwa_after": "q'illu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "marrón",
+    "kichwa_before": null,
+    "kichwa_after": "anka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "morado",
+    "kichwa_before": null,
+    "kichwa_after": "kulli",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "grís",
+    "kichwa_before": null,
+    "kichwa_after": "anu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-update",
+    "spanish_before": "café",
+    "spanish_after": "café",
+    "kichwa_before": "kapi",
+    "kichwa_after": "ch'umpi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "zapato",
+    "kichwa_before": null,
+    "kichwa_after": "asuta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:29Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ropa",
+    "kichwa_before": null,
+    "kichwa_after": "pacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "camisa",
+    "kichwa_before": null,
+    "kichwa_after": "chumpi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pantalón",
+    "kichwa_before": null,
+    "kichwa_after": "pantalun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "falda",
+    "kichwa_before": null,
+    "kichwa_after": "pollera",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sombrero",
+    "kichwa_before": null,
+    "kichwa_after": "umu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cabeza",
+    "kichwa_before": null,
+    "kichwa_after": "uma",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ojo",
+    "kichwa_before": null,
+    "kichwa_after": "ñawi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "oído",
+    "kichwa_before": null,
+    "kichwa_after": "rinri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nariz",
+    "kichwa_before": null,
+    "kichwa_after": "singa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "boca",
+    "kichwa_before": null,
+    "kichwa_after": "simi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mano",
+    "kichwa_before": null,
+    "kichwa_after": "maki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "brazo",
+    "kichwa_before": null,
+    "kichwa_after": "ruku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pie",
+    "kichwa_before": null,
+    "kichwa_after": "chaqui",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pierna",
+    "kichwa_before": null,
+    "kichwa_after": "siki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "corazón",
+    "kichwa_before": null,
+    "kichwa_after": "shunku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estómago",
+    "kichwa_before": null,
+    "kichwa_after": "wiksa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "espalda",
+    "kichwa_before": null,
+    "kichwa_after": "wasa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "médico",
+    "kichwa_before": null,
+    "kichwa_after": "hamuq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hospital",
+    "kichwa_before": null,
+    "kichwa_after": "hampiy wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "medicina",
+    "kichwa_before": null,
+    "kichwa_after": "hampi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "vacuna",
+    "kichwa_before": null,
+    "kichwa_after": "hampi ruray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fiebre",
+    "kichwa_before": null,
+    "kichwa_after": "nina ukhu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cansado",
+    "kichwa_before": null,
+    "kichwa_after": "allquy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fuerte",
+    "kichwa_before": null,
+    "kichwa_after": "callpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "débil",
+    "kichwa_before": null,
+    "kichwa_after": "uchuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "contento",
+    "kichwa_before": null,
+    "kichwa_after": "kushi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "triste",
+    "kichwa_before": null,
+    "kichwa_after": "llakiy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "enojado",
+    "kichwa_before": null,
+    "kichwa_after": "pinakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "miedo",
+    "kichwa_before": null,
+    "kichwa_after": "manchakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "juntos",
+    "kichwa_before": null,
+    "kichwa_after": "juktawan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "separados",
+    "kichwa_before": null,
+    "kichwa_after": "kinray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siéntate",
+    "kichwa_before": null,
+    "kichwa_after": "tiyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "levántate",
+    "kichwa_before": null,
+    "kichwa_after": "hatariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "por aquí",
+    "kichwa_before": null,
+    "kichwa_after": "kaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "por allá",
+    "kichwa_before": null,
+    "kichwa_after": "chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuidado",
+    "kichwa_before": null,
+    "kichwa_after": "yupaychay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:33:30Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bienvenido",
+    "kichwa_before": null,
+    "kichwa_after": "alli shamuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "adiós",
+    "kichwa_before": null,
+    "kichwa_after": "kutiyachkani",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hasta luego",
+    "kichwa_before": null,
+    "kichwa_after": "kausarishun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "muchas gracias",
+    "kichwa_before": null,
+    "kichwa_after": "ashta yuspagara",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "de nada",
+    "kichwa_before": null,
+    "kichwa_after": "ama shina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "perdón",
+    "kichwa_before": null,
+    "kichwa_after": "pañapakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lo siento",
+    "kichwa_before": null,
+    "kichwa_after": "sorry-ni",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "muy bien",
+    "kichwa_before": null,
+    "kichwa_after": "ashta allin",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "más o menos",
+    "kichwa_before": null,
+    "kichwa_after": "ashalla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿qué?",
+    "kichwa_before": null,
+    "kichwa_after": "imata?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿quién?",
+    "kichwa_before": null,
+    "kichwa_after": "pi?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿dónde?",
+    "kichwa_before": null,
+    "kichwa_after": "maypi?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cuándo?",
+    "kichwa_before": null,
+    "kichwa_after": "imashina pacha?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿por qué?",
+    "kichwa_before": null,
+    "kichwa_after": "ima chay?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cuánto?",
+    "kichwa_before": null,
+    "kichwa_after": "mashna?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-update",
+    "spanish_before": "hola",
+    "spanish_after": "hola",
+    "kichwa_before": "rimaykullayki",
+    "kichwa_after": "imashina kanki?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cómo te llamas?",
+    "kichwa_before": null,
+    "kichwa_after": "ima shuti kanki?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mucho gusto",
+    "kichwa_before": null,
+    "kichwa_after": "kushi shunkuwan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "encantado",
+    "kichwa_before": null,
+    "kichwa_after": "kushi shunku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "madre",
+    "kichwa_before": null,
+    "kichwa_after": "mama",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "padre",
+    "kichwa_before": null,
+    "kichwa_after": "tayta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermano (de hombre)",
+    "kichwa_before": null,
+    "kichwa_after": "wayqi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermano (de mujer)",
+    "kichwa_before": null,
+    "kichwa_after": "turi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermana (de hombre)",
+    "kichwa_before": null,
+    "kichwa_after": "ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermana (de mujer)",
+    "kichwa_before": null,
+    "kichwa_after": "ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hijo",
+    "kichwa_before": null,
+    "kichwa_after": "chauri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hija",
+    "kichwa_before": null,
+    "kichwa_after": "ususi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abuelo",
+    "kichwa_before": null,
+    "kichwa_after": "awki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abuela",
+    "kichwa_before": null,
+    "kichwa_after": "mamita",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tío",
+    "kichwa_before": null,
+    "kichwa_after": "mama tayta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tía",
+    "kichwa_before": null,
+    "kichwa_after": "mama ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "primo",
+    "kichwa_before": null,
+    "kichwa_after": "mashi wayqi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "prima",
+    "kichwa_before": null,
+    "kichwa_after": "mashi ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "niño",
+    "kichwa_before": null,
+    "kichwa_after": "wawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "niña",
+    "kichwa_before": null,
+    "kichwa_after": "wawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hombre",
+    "kichwa_before": null,
+    "kichwa_after": "karri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mujer",
+    "kichwa_before": null,
+    "kichwa_after": "warmi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "persona",
+    "kichwa_before": null,
+    "kichwa_after": "runa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "gente",
+    "kichwa_before": null,
+    "kichwa_after": "runakuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "maestro",
+    "kichwa_before": null,
+    "kichwa_after": "yachachiq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estudiante",
+    "kichwa_before": null,
+    "kichwa_after": "yachakuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escuela",
+    "kichwa_before": null,
+    "kichwa_after": "yachay wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "colegio",
+    "kichwa_before": null,
+    "kichwa_after": "yachay wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "universidad",
+    "kichwa_before": null,
+    "kichwa_after": "yachay yachana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "libro",
+    "kichwa_before": null,
+    "kichwa_after": "panka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuaderno",
+    "kichwa_before": null,
+    "kichwa_after": "killka panka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lápiz",
+    "kichwa_before": null,
+    "kichwa_after": "qillka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lapicero",
+    "kichwa_before": null,
+    "kichwa_after": "qillkana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "borrador",
+    "kichwa_before": null,
+    "kichwa_after": "pichana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tiza",
+    "kichwa_before": null,
+    "kichwa_after": "khillu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pizarra",
+    "kichwa_before": null,
+    "kichwa_after": "killka rumi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "silla",
+    "kichwa_before": null,
+    "kichwa_after": "tiana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mesa",
+    "kichwa_before": null,
+    "kichwa_after": "misa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "puerta",
+    "kichwa_before": null,
+    "kichwa_after": "punka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ventana",
+    "kichwa_before": null,
+    "kichwa_after": "winchu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "casa",
+    "kichwa_before": null,
+    "kichwa_after": "wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuarto",
+    "kichwa_before": null,
+    "kichwa_after": "uta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:21Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pueblo",
+    "kichwa_before": null,
+    "kichwa_after": "llakta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ciudad",
+    "kichwa_before": null,
+    "kichwa_after": "hatun llaqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "camino",
+    "kichwa_before": null,
+    "kichwa_after": "ñan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carretera",
+    "kichwa_before": null,
+    "kichwa_after": "ñan hatun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carro",
+    "kichwa_before": null,
+    "kichwa_after": "karu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bus",
+    "kichwa_before": null,
+    "kichwa_after": "awtobus",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bicicleta",
+    "kichwa_before": null,
+    "kichwa_after": "suklla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "moto",
+    "kichwa_before": null,
+    "kichwa_after": "motukaruta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "avión",
+    "kichwa_before": null,
+    "kichwa_after": "wayra machina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "barco",
+    "kichwa_before": null,
+    "kichwa_after": "hatun balsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pan",
+    "kichwa_before": null,
+    "kichwa_after": "tanta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "maíz",
+    "kichwa_before": null,
+    "kichwa_after": "sara",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "papa",
+    "kichwa_before": null,
+    "kichwa_after": "chugllu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arroz",
+    "kichwa_before": null,
+    "kichwa_after": "arwas",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carne",
+    "kichwa_before": null,
+    "kichwa_after": "aycha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pollo",
+    "kichwa_before": null,
+    "kichwa_after": "challwa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pescado",
+    "kichwa_before": null,
+    "kichwa_after": "challwa aycha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fruta",
+    "kichwa_before": null,
+    "kichwa_after": "ruru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "manzana",
+    "kichwa_before": null,
+    "kichwa_after": "mazana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "plátano",
+    "kichwa_before": null,
+    "kichwa_after": "rima",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "naranja",
+    "kichwa_before": null,
+    "kichwa_after": "laranja",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "leche",
+    "kichwa_before": null,
+    "kichwa_after": "lliqlla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "queso",
+    "kichwa_before": null,
+    "kichwa_after": "kisu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "huevo",
+    "kichwa_before": null,
+    "kichwa_after": "ruru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sal",
+    "kichwa_before": null,
+    "kichwa_after": "kachi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "azúcar",
+    "kichwa_before": null,
+    "kichwa_after": "asucar",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aceite",
+    "kichwa_before": null,
+    "kichwa_after": "asaytu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "café",
+    "kichwa_before": null,
+    "kichwa_after": "kapi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "te",
+    "kichwa_before": null,
+    "kichwa_after": "ti",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sopa",
+    "kichwa_before": null,
+    "kichwa_after": "upa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "chicha",
+    "kichwa_before": null,
+    "kichwa_after": "aswa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mate",
+    "kichwa_before": null,
+    "kichwa_after": "mati",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "desayuno",
+    "kichwa_before": null,
+    "kichwa_after": "aya mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "almuerzo",
+    "kichwa_before": null,
+    "kichwa_after": "chishi mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cena",
+    "kichwa_before": null,
+    "kichwa_after": "tuta mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hambre",
+    "kichwa_before": null,
+    "kichwa_after": "yarapay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sed",
+    "kichwa_before": null,
+    "kichwa_after": "yakuchkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "frío",
+    "kichwa_before": null,
+    "kichwa_after": "chiri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "calor",
+    "kichwa_before": null,
+    "kichwa_after": "rupay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lluvia",
+    "kichwa_before": null,
+    "kichwa_after": "para",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nieve",
+    "kichwa_before": null,
+    "kichwa_after": "rit'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "viento",
+    "kichwa_before": null,
+    "kichwa_after": "wayra",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sol",
+    "kichwa_before": null,
+    "kichwa_after": "inti",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "luna",
+    "kichwa_before": null,
+    "kichwa_after": "killa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estrella",
+    "kichwa_before": null,
+    "kichwa_after": "quyllur",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tierra",
+    "kichwa_before": null,
+    "kichwa_after": "allpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "montaña",
+    "kichwa_before": null,
+    "kichwa_after": "urku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "río",
+    "kichwa_before": null,
+    "kichwa_after": "mayu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "laguna",
+    "kichwa_before": null,
+    "kichwa_after": "qucha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mar",
+    "kichwa_before": null,
+    "kichwa_after": "mama qucha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bosque",
+    "kichwa_before": null,
+    "kichwa_after": "sacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "flor",
+    "kichwa_before": null,
+    "kichwa_after": "t'ika",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "árbol",
+    "kichwa_before": null,
+    "kichwa_after": "malli",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hoja",
+    "kichwa_before": null,
+    "kichwa_after": "raphi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "semilla",
+    "kichwa_before": null,
+    "kichwa_after": "muru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "piedra",
+    "kichwa_before": null,
+    "kichwa_after": "rumi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arena",
+    "kichwa_before": null,
+    "kichwa_after": "sachi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fuego",
+    "kichwa_before": null,
+    "kichwa_after": "nina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "humo",
+    "kichwa_before": null,
+    "kichwa_after": "supa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cielo",
+    "kichwa_before": null,
+    "kichwa_after": "hanaq pacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nube",
+    "kichwa_before": null,
+    "kichwa_after": "puyu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "día",
+    "kichwa_before": null,
+    "kichwa_after": "p'unchay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "noche",
+    "kichwa_before": null,
+    "kichwa_after": "tuta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mañana",
+    "kichwa_before": null,
+    "kichwa_after": "paqarin",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ayer",
+    "kichwa_before": null,
+    "kichwa_after": "qayna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hoy",
+    "kichwa_before": null,
+    "kichwa_after": "kunan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mañana (temprano)",
+    "kichwa_before": null,
+    "kichwa_after": "pakariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "semana",
+    "kichwa_before": null,
+    "kichwa_after": "simana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mes",
+    "kichwa_before": null,
+    "kichwa_after": "killa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "año",
+    "kichwa_before": null,
+    "kichwa_after": "wata",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siempre",
+    "kichwa_before": null,
+    "kichwa_after": "sapanka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nunca",
+    "kichwa_before": null,
+    "kichwa_after": "mana chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:22Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ahora",
+    "kichwa_before": null,
+    "kichwa_after": "kunan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "luego",
+    "kichwa_before": null,
+    "kichwa_after": "uku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "antes",
+    "kichwa_before": null,
+    "kichwa_after": "ñawpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "después",
+    "kichwa_before": null,
+    "kichwa_after": "qhipa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "rápido",
+    "kichwa_before": null,
+    "kichwa_after": "utka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lento",
+    "kichwa_before": null,
+    "kichwa_after": "ina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "grande",
+    "kichwa_before": null,
+    "kichwa_after": "hatun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pequeño",
+    "kichwa_before": null,
+    "kichwa_after": "uchilla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nuevo",
+    "kichwa_before": null,
+    "kichwa_after": "musuq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "viejo",
+    "kichwa_before": null,
+    "kichwa_after": "machuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bonito",
+    "kichwa_before": null,
+    "kichwa_after": "sumak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "feo",
+    "kichwa_before": null,
+    "kichwa_after": "mana sumak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fácil",
+    "kichwa_before": null,
+    "kichwa_after": "llasay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "difícil",
+    "kichwa_before": null,
+    "kichwa_after": "asachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lejos",
+    "kichwa_before": null,
+    "kichwa_after": "karu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cerca",
+    "kichwa_before": null,
+    "kichwa_after": "ayllu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arriba",
+    "kichwa_before": null,
+    "kichwa_after": "hawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abajo",
+    "kichwa_before": null,
+    "kichwa_after": "uray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "adentro",
+    "kichwa_before": null,
+    "kichwa_after": "ukhu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "afuera",
+    "kichwa_before": null,
+    "kichwa_after": "hawapi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aquí",
+    "kichwa_before": null,
+    "kichwa_after": "kaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "allá",
+    "kichwa_before": null,
+    "kichwa_after": "chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "izquierda",
+    "kichwa_before": null,
+    "kichwa_after": "lluq'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "derecha",
+    "kichwa_before": null,
+    "kichwa_after": "paña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "delante",
+    "kichwa_before": null,
+    "kichwa_after": "ñawpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "atrás",
+    "kichwa_before": null,
+    "kichwa_after": "qhipa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "uno",
+    "kichwa_before": null,
+    "kichwa_after": "shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dos",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tres",
+    "kichwa_before": null,
+    "kichwa_after": "kimsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuatro",
+    "kichwa_before": null,
+    "kichwa_after": "taila",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cinco",
+    "kichwa_before": null,
+    "kichwa_after": "pichka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "seis",
+    "kichwa_before": null,
+    "kichwa_after": "suqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siete",
+    "kichwa_before": null,
+    "kichwa_after": "qanchis",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ocho",
+    "kichwa_before": null,
+    "kichwa_after": "pusaq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nueve",
+    "kichwa_before": null,
+    "kichwa_after": "isqun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diez",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "once",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "doce",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a ishkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "trece",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a kimsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "catorce",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a taila",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "quince",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a pichka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dieciséis",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a suqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diecisiete",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a qanchis",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dieciocho",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a pusaq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diecinueve",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a isqun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "veinte",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "veintiuno",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay chunk'a shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "treinta",
+    "kichwa_before": null,
+    "kichwa_after": "kimsa chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuarenta",
+    "kichwa_before": null,
+    "kichwa_after": "taila chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cincuenta",
+    "kichwa_before": null,
+    "kichwa_after": "pichka chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sesenta",
+    "kichwa_before": null,
+    "kichwa_after": "suqta chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "setenta",
+    "kichwa_before": null,
+    "kichwa_after": "qanchis chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ochenta",
+    "kichwa_before": null,
+    "kichwa_after": "pusaq chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "noventa",
+    "kichwa_before": null,
+    "kichwa_after": "isqun chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cien",
+    "kichwa_before": null,
+    "kichwa_after": "pachak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mil",
+    "kichwa_before": null,
+    "kichwa_after": "waranqa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "leer",
+    "kichwa_before": null,
+    "kichwa_after": "killkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escribir",
+    "kichwa_before": null,
+    "kichwa_after": "killkana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hablar",
+    "kichwa_before": null,
+    "kichwa_after": "rimay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escuchar",
+    "kichwa_before": null,
+    "kichwa_after": "uyariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ver",
+    "kichwa_before": null,
+    "kichwa_after": "rikuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ir",
+    "kichwa_before": null,
+    "kichwa_after": "riq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "venir",
+    "kichwa_before": null,
+    "kichwa_after": "hamuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "comer",
+    "kichwa_before": null,
+    "kichwa_after": "mikuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "beber",
+    "kichwa_before": null,
+    "kichwa_after": "upyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dormir",
+    "kichwa_before": null,
+    "kichwa_after": "p'ukuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "correr",
+    "kichwa_before": null,
+    "kichwa_after": "puriy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "caminar",
+    "kichwa_before": null,
+    "kichwa_after": "ñan paway",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "jugar",
+    "kichwa_before": null,
+    "kichwa_after": "aniy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aprender",
+    "kichwa_before": null,
+    "kichwa_after": "yachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:23Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "enseñar",
+    "kichwa_before": null,
+    "kichwa_after": "yachachiy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "trabajar",
+    "kichwa_before": null,
+    "kichwa_after": "llank'ay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estudiar",
+    "kichwa_before": null,
+    "kichwa_after": "yachakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abrir",
+    "kichwa_before": null,
+    "kichwa_after": "kichay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cerrar",
+    "kichwa_before": null,
+    "kichwa_after": "wichqay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "encender",
+    "kichwa_before": null,
+    "kichwa_after": "rikchariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "apagar",
+    "kichwa_before": null,
+    "kichwa_after": "wachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "poner",
+    "kichwa_before": null,
+    "kichwa_after": "churay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "quitar",
+    "kichwa_before": null,
+    "kichwa_after": "qapariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ayudar",
+    "kichwa_before": null,
+    "kichwa_after": "yapay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pensar",
+    "kichwa_before": null,
+    "kichwa_after": "yuyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "querer",
+    "kichwa_before": null,
+    "kichwa_after": "munay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "amar",
+    "kichwa_before": null,
+    "kichwa_after": "kuyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "verbo",
+    "kichwa_before": null,
+    "kichwa_after": "ruwanakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "color",
+    "kichwa_before": null,
+    "kichwa_after": "llimp'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "blanco",
+    "kichwa_before": null,
+    "kichwa_after": "yuraq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "negro",
+    "kichwa_before": null,
+    "kichwa_after": "yana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "rojo",
+    "kichwa_before": null,
+    "kichwa_after": "puka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "azul",
+    "kichwa_before": null,
+    "kichwa_after": "anqas",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "verde",
+    "kichwa_before": null,
+    "kichwa_after": "waylla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "amarillo",
+    "kichwa_before": null,
+    "kichwa_after": "q'illu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "marrón",
+    "kichwa_before": null,
+    "kichwa_after": "anka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "morado",
+    "kichwa_before": null,
+    "kichwa_after": "kulli",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "grís",
+    "kichwa_before": null,
+    "kichwa_after": "anu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-update",
+    "spanish_before": "café",
+    "spanish_after": "café",
+    "kichwa_before": "kapi",
+    "kichwa_after": "ch'umpi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "zapato",
+    "kichwa_before": null,
+    "kichwa_after": "asuta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ropa",
+    "kichwa_before": null,
+    "kichwa_after": "pacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "camisa",
+    "kichwa_before": null,
+    "kichwa_after": "chumpi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pantalón",
+    "kichwa_before": null,
+    "kichwa_after": "pantalun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "falda",
+    "kichwa_before": null,
+    "kichwa_after": "pollera",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sombrero",
+    "kichwa_before": null,
+    "kichwa_after": "umu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cabeza",
+    "kichwa_before": null,
+    "kichwa_after": "uma",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ojo",
+    "kichwa_before": null,
+    "kichwa_after": "ñawi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "oído",
+    "kichwa_before": null,
+    "kichwa_after": "rinri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nariz",
+    "kichwa_before": null,
+    "kichwa_after": "singa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "boca",
+    "kichwa_before": null,
+    "kichwa_after": "simi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mano",
+    "kichwa_before": null,
+    "kichwa_after": "maki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "brazo",
+    "kichwa_before": null,
+    "kichwa_after": "ruku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pie",
+    "kichwa_before": null,
+    "kichwa_after": "chaqui",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pierna",
+    "kichwa_before": null,
+    "kichwa_after": "siki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "corazón",
+    "kichwa_before": null,
+    "kichwa_after": "shunku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estómago",
+    "kichwa_before": null,
+    "kichwa_after": "wiksa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "espalda",
+    "kichwa_before": null,
+    "kichwa_after": "wasa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "médico",
+    "kichwa_before": null,
+    "kichwa_after": "hamuq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hospital",
+    "kichwa_before": null,
+    "kichwa_after": "hampiy wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "medicina",
+    "kichwa_before": null,
+    "kichwa_after": "hampi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "vacuna",
+    "kichwa_before": null,
+    "kichwa_after": "hampi ruray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fiebre",
+    "kichwa_before": null,
+    "kichwa_after": "nina ukhu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cansado",
+    "kichwa_before": null,
+    "kichwa_after": "allquy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fuerte",
+    "kichwa_before": null,
+    "kichwa_after": "callpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "débil",
+    "kichwa_before": null,
+    "kichwa_after": "uchuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "contento",
+    "kichwa_before": null,
+    "kichwa_after": "kushi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "triste",
+    "kichwa_before": null,
+    "kichwa_after": "llakiy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "enojado",
+    "kichwa_before": null,
+    "kichwa_after": "pinakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "miedo",
+    "kichwa_before": null,
+    "kichwa_after": "manchakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "juntos",
+    "kichwa_before": null,
+    "kichwa_after": "juktawan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "separados",
+    "kichwa_before": null,
+    "kichwa_after": "kinray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siéntate",
+    "kichwa_before": null,
+    "kichwa_after": "tiyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "levántate",
+    "kichwa_before": null,
+    "kichwa_after": "hatariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "por aquí",
+    "kichwa_before": null,
+    "kichwa_after": "kaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:24Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "por allá",
+    "kichwa_before": null,
+    "kichwa_after": "chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:25Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuidado",
+    "kichwa_before": null,
+    "kichwa_after": "yupaychay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:37:25Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bienvenido",
+    "kichwa_before": null,
+    "kichwa_after": "alli shamuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:50Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "adiós",
+    "kichwa_before": null,
+    "kichwa_after": "kutiyachkani",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:50Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hasta luego",
+    "kichwa_before": null,
+    "kichwa_after": "kausarishun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:50Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "muchas gracias",
+    "kichwa_before": null,
+    "kichwa_after": "ashta yuspagara",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:50Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "de nada",
+    "kichwa_before": null,
+    "kichwa_after": "ama shina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:50Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "perdón",
+    "kichwa_before": null,
+    "kichwa_after": "pañapakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:50Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lo siento",
+    "kichwa_before": null,
+    "kichwa_after": "sorry-ni",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:50Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "muy bien",
+    "kichwa_before": null,
+    "kichwa_after": "ashta allin",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "más o menos",
+    "kichwa_before": null,
+    "kichwa_after": "ashalla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿qué?",
+    "kichwa_before": null,
+    "kichwa_after": "imata?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿quién?",
+    "kichwa_before": null,
+    "kichwa_after": "pi?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿dónde?",
+    "kichwa_before": null,
+    "kichwa_after": "maypi?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cuándo?",
+    "kichwa_before": null,
+    "kichwa_after": "imashina pacha?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿por qué?",
+    "kichwa_before": null,
+    "kichwa_after": "ima chay?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cuánto?",
+    "kichwa_before": null,
+    "kichwa_after": "mashna?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-update",
+    "spanish_before": "hola",
+    "spanish_after": "hola",
+    "kichwa_before": "rimaykullayki",
+    "kichwa_after": "imashina kanki?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "¿cómo te llamas?",
+    "kichwa_before": null,
+    "kichwa_after": "ima shuti kanki?",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mucho gusto",
+    "kichwa_before": null,
+    "kichwa_after": "kushi shunkuwan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "encantado",
+    "kichwa_before": null,
+    "kichwa_after": "kushi shunku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "madre",
+    "kichwa_before": null,
+    "kichwa_after": "mama",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "padre",
+    "kichwa_before": null,
+    "kichwa_after": "tayta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermano (de hombre)",
+    "kichwa_before": null,
+    "kichwa_after": "wayqi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermano (de mujer)",
+    "kichwa_before": null,
+    "kichwa_after": "turi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermana (de hombre)",
+    "kichwa_before": null,
+    "kichwa_after": "ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hermana (de mujer)",
+    "kichwa_before": null,
+    "kichwa_after": "ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hijo",
+    "kichwa_before": null,
+    "kichwa_after": "chauri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hija",
+    "kichwa_before": null,
+    "kichwa_after": "ususi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abuelo",
+    "kichwa_before": null,
+    "kichwa_after": "awki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abuela",
+    "kichwa_before": null,
+    "kichwa_after": "mamita",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tío",
+    "kichwa_before": null,
+    "kichwa_after": "mama tayta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tía",
+    "kichwa_before": null,
+    "kichwa_after": "mama ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "primo",
+    "kichwa_before": null,
+    "kichwa_after": "mashi wayqi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "prima",
+    "kichwa_before": null,
+    "kichwa_after": "mashi ñaña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "niño",
+    "kichwa_before": null,
+    "kichwa_after": "wawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "niña",
+    "kichwa_before": null,
+    "kichwa_after": "wawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hombre",
+    "kichwa_before": null,
+    "kichwa_after": "karri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mujer",
+    "kichwa_before": null,
+    "kichwa_after": "warmi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "persona",
+    "kichwa_before": null,
+    "kichwa_after": "runa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "gente",
+    "kichwa_before": null,
+    "kichwa_after": "runakuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "maestro",
+    "kichwa_before": null,
+    "kichwa_after": "yachachiq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estudiante",
+    "kichwa_before": null,
+    "kichwa_after": "yachakuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escuela",
+    "kichwa_before": null,
+    "kichwa_after": "yachay wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "colegio",
+    "kichwa_before": null,
+    "kichwa_after": "yachay wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "universidad",
+    "kichwa_before": null,
+    "kichwa_after": "yachay yachana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "libro",
+    "kichwa_before": null,
+    "kichwa_after": "panka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuaderno",
+    "kichwa_before": null,
+    "kichwa_after": "killka panka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lápiz",
+    "kichwa_before": null,
+    "kichwa_after": "qillka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lapicero",
+    "kichwa_before": null,
+    "kichwa_after": "qillkana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "borrador",
+    "kichwa_before": null,
+    "kichwa_after": "pichana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tiza",
+    "kichwa_before": null,
+    "kichwa_after": "khillu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pizarra",
+    "kichwa_before": null,
+    "kichwa_after": "killka rumi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "silla",
+    "kichwa_before": null,
+    "kichwa_after": "tiana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mesa",
+    "kichwa_before": null,
+    "kichwa_after": "misa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "puerta",
+    "kichwa_before": null,
+    "kichwa_after": "punka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ventana",
+    "kichwa_before": null,
+    "kichwa_after": "winchu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "casa",
+    "kichwa_before": null,
+    "kichwa_after": "wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuarto",
+    "kichwa_before": null,
+    "kichwa_after": "uta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pueblo",
+    "kichwa_before": null,
+    "kichwa_after": "llakta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ciudad",
+    "kichwa_before": null,
+    "kichwa_after": "hatun llaqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "camino",
+    "kichwa_before": null,
+    "kichwa_after": "ñan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carretera",
+    "kichwa_before": null,
+    "kichwa_after": "ñan hatun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carro",
+    "kichwa_before": null,
+    "kichwa_after": "karu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bus",
+    "kichwa_before": null,
+    "kichwa_after": "awtobus",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bicicleta",
+    "kichwa_before": null,
+    "kichwa_after": "suklla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "moto",
+    "kichwa_before": null,
+    "kichwa_after": "motukaruta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "avión",
+    "kichwa_before": null,
+    "kichwa_after": "wayra machina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:51Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "barco",
+    "kichwa_before": null,
+    "kichwa_after": "hatun balsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pan",
+    "kichwa_before": null,
+    "kichwa_after": "tanta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "maíz",
+    "kichwa_before": null,
+    "kichwa_after": "sara",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "papa",
+    "kichwa_before": null,
+    "kichwa_after": "chugllu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arroz",
+    "kichwa_before": null,
+    "kichwa_after": "arwas",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "carne",
+    "kichwa_before": null,
+    "kichwa_after": "aycha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pollo",
+    "kichwa_before": null,
+    "kichwa_after": "challwa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pescado",
+    "kichwa_before": null,
+    "kichwa_after": "challwa aycha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fruta",
+    "kichwa_before": null,
+    "kichwa_after": "ruru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "manzana",
+    "kichwa_before": null,
+    "kichwa_after": "mazana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "plátano",
+    "kichwa_before": null,
+    "kichwa_after": "rima",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "naranja",
+    "kichwa_before": null,
+    "kichwa_after": "laranja",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "leche",
+    "kichwa_before": null,
+    "kichwa_after": "lliqlla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "queso",
+    "kichwa_before": null,
+    "kichwa_after": "kisu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "huevo",
+    "kichwa_before": null,
+    "kichwa_after": "ruru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sal",
+    "kichwa_before": null,
+    "kichwa_after": "kachi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "azúcar",
+    "kichwa_before": null,
+    "kichwa_after": "asucar",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aceite",
+    "kichwa_before": null,
+    "kichwa_after": "asaytu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "café",
+    "kichwa_before": null,
+    "kichwa_after": "kapi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "te",
+    "kichwa_before": null,
+    "kichwa_after": "ti",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sopa",
+    "kichwa_before": null,
+    "kichwa_after": "upa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "chicha",
+    "kichwa_before": null,
+    "kichwa_after": "aswa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mate",
+    "kichwa_before": null,
+    "kichwa_after": "mati",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "desayuno",
+    "kichwa_before": null,
+    "kichwa_after": "aya mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "almuerzo",
+    "kichwa_before": null,
+    "kichwa_after": "chishi mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cena",
+    "kichwa_before": null,
+    "kichwa_after": "tuta mikhuna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hambre",
+    "kichwa_before": null,
+    "kichwa_after": "yarapay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sed",
+    "kichwa_before": null,
+    "kichwa_after": "yakuchkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "frío",
+    "kichwa_before": null,
+    "kichwa_after": "chiri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "calor",
+    "kichwa_before": null,
+    "kichwa_after": "rupay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lluvia",
+    "kichwa_before": null,
+    "kichwa_after": "para",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nieve",
+    "kichwa_before": null,
+    "kichwa_after": "rit'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "viento",
+    "kichwa_before": null,
+    "kichwa_after": "wayra",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sol",
+    "kichwa_before": null,
+    "kichwa_after": "inti",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "luna",
+    "kichwa_before": null,
+    "kichwa_after": "killa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estrella",
+    "kichwa_before": null,
+    "kichwa_after": "quyllur",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tierra",
+    "kichwa_before": null,
+    "kichwa_after": "allpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "montaña",
+    "kichwa_before": null,
+    "kichwa_after": "urku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "río",
+    "kichwa_before": null,
+    "kichwa_after": "mayu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "laguna",
+    "kichwa_before": null,
+    "kichwa_after": "qucha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mar",
+    "kichwa_before": null,
+    "kichwa_after": "mama qucha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bosque",
+    "kichwa_before": null,
+    "kichwa_after": "sacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "flor",
+    "kichwa_before": null,
+    "kichwa_after": "t'ika",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "árbol",
+    "kichwa_before": null,
+    "kichwa_after": "malli",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hoja",
+    "kichwa_before": null,
+    "kichwa_after": "raphi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "semilla",
+    "kichwa_before": null,
+    "kichwa_after": "muru",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "piedra",
+    "kichwa_before": null,
+    "kichwa_after": "rumi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arena",
+    "kichwa_before": null,
+    "kichwa_after": "sachi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fuego",
+    "kichwa_before": null,
+    "kichwa_after": "nina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "humo",
+    "kichwa_before": null,
+    "kichwa_after": "supa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cielo",
+    "kichwa_before": null,
+    "kichwa_after": "hanaq pacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nube",
+    "kichwa_before": null,
+    "kichwa_after": "puyu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "día",
+    "kichwa_before": null,
+    "kichwa_after": "p'unchay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "noche",
+    "kichwa_before": null,
+    "kichwa_after": "tuta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mañana",
+    "kichwa_before": null,
+    "kichwa_after": "paqarin",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ayer",
+    "kichwa_before": null,
+    "kichwa_after": "qayna",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hoy",
+    "kichwa_before": null,
+    "kichwa_after": "kunan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mañana (temprano)",
+    "kichwa_before": null,
+    "kichwa_after": "pakariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:52Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "semana",
+    "kichwa_before": null,
+    "kichwa_after": "simana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mes",
+    "kichwa_before": null,
+    "kichwa_after": "killa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "año",
+    "kichwa_before": null,
+    "kichwa_after": "wata",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siempre",
+    "kichwa_before": null,
+    "kichwa_after": "sapanka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nunca",
+    "kichwa_before": null,
+    "kichwa_after": "mana chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ahora",
+    "kichwa_before": null,
+    "kichwa_after": "kunan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "luego",
+    "kichwa_before": null,
+    "kichwa_after": "uku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "antes",
+    "kichwa_before": null,
+    "kichwa_after": "ñawpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "después",
+    "kichwa_before": null,
+    "kichwa_after": "qhipa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "rápido",
+    "kichwa_before": null,
+    "kichwa_after": "utka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lento",
+    "kichwa_before": null,
+    "kichwa_after": "ina",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "grande",
+    "kichwa_before": null,
+    "kichwa_after": "hatun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pequeño",
+    "kichwa_before": null,
+    "kichwa_after": "uchilla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nuevo",
+    "kichwa_before": null,
+    "kichwa_after": "musuq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "viejo",
+    "kichwa_before": null,
+    "kichwa_after": "machuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bonito",
+    "kichwa_before": null,
+    "kichwa_after": "sumak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "feo",
+    "kichwa_before": null,
+    "kichwa_after": "mana sumak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fácil",
+    "kichwa_before": null,
+    "kichwa_after": "llasay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "difícil",
+    "kichwa_before": null,
+    "kichwa_after": "asachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "lejos",
+    "kichwa_before": null,
+    "kichwa_after": "karu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cerca",
+    "kichwa_before": null,
+    "kichwa_after": "ayllu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "arriba",
+    "kichwa_before": null,
+    "kichwa_after": "hawa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abajo",
+    "kichwa_before": null,
+    "kichwa_after": "uray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "adentro",
+    "kichwa_before": null,
+    "kichwa_after": "ukhu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "afuera",
+    "kichwa_before": null,
+    "kichwa_after": "hawapi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aquí",
+    "kichwa_before": null,
+    "kichwa_after": "kaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "allá",
+    "kichwa_before": null,
+    "kichwa_after": "chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "izquierda",
+    "kichwa_before": null,
+    "kichwa_after": "lluq'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "derecha",
+    "kichwa_before": null,
+    "kichwa_after": "paña",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "delante",
+    "kichwa_before": null,
+    "kichwa_after": "ñawpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "atrás",
+    "kichwa_before": null,
+    "kichwa_after": "qhipa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "uno",
+    "kichwa_before": null,
+    "kichwa_after": "shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dos",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "tres",
+    "kichwa_before": null,
+    "kichwa_after": "kimsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuatro",
+    "kichwa_before": null,
+    "kichwa_after": "taila",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cinco",
+    "kichwa_before": null,
+    "kichwa_after": "pichka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "seis",
+    "kichwa_before": null,
+    "kichwa_after": "suqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siete",
+    "kichwa_before": null,
+    "kichwa_after": "qanchis",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ocho",
+    "kichwa_before": null,
+    "kichwa_after": "pusaq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nueve",
+    "kichwa_before": null,
+    "kichwa_after": "isqun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diez",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "once",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "doce",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a ishkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "trece",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a kimsa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "catorce",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a taila",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "quince",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a pichka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dieciséis",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a suqta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diecisiete",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a qanchis",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dieciocho",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a pusaq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "diecinueve",
+    "kichwa_before": null,
+    "kichwa_after": "chunk'a isqun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "veinte",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "veintiuno",
+    "kichwa_before": null,
+    "kichwa_after": "ishkay chunk'a shuk",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "treinta",
+    "kichwa_before": null,
+    "kichwa_after": "kimsa chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuarenta",
+    "kichwa_before": null,
+    "kichwa_after": "taila chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cincuenta",
+    "kichwa_before": null,
+    "kichwa_after": "pichka chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sesenta",
+    "kichwa_before": null,
+    "kichwa_after": "suqta chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "setenta",
+    "kichwa_before": null,
+    "kichwa_after": "qanchis chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ochenta",
+    "kichwa_before": null,
+    "kichwa_after": "pusaq chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:53Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "noventa",
+    "kichwa_before": null,
+    "kichwa_after": "isqun chunk'a",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cien",
+    "kichwa_before": null,
+    "kichwa_after": "pachak",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mil",
+    "kichwa_before": null,
+    "kichwa_after": "waranqa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "leer",
+    "kichwa_before": null,
+    "kichwa_after": "killkay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escribir",
+    "kichwa_before": null,
+    "kichwa_after": "killkana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hablar",
+    "kichwa_before": null,
+    "kichwa_after": "rimay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "escuchar",
+    "kichwa_before": null,
+    "kichwa_after": "uyariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ver",
+    "kichwa_before": null,
+    "kichwa_after": "rikuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ir",
+    "kichwa_before": null,
+    "kichwa_after": "riq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "venir",
+    "kichwa_before": null,
+    "kichwa_after": "hamuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "comer",
+    "kichwa_before": null,
+    "kichwa_after": "mikuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "beber",
+    "kichwa_before": null,
+    "kichwa_after": "upyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "dormir",
+    "kichwa_before": null,
+    "kichwa_after": "p'ukuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "correr",
+    "kichwa_before": null,
+    "kichwa_after": "puriy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "caminar",
+    "kichwa_before": null,
+    "kichwa_after": "ñan paway",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "jugar",
+    "kichwa_before": null,
+    "kichwa_after": "aniy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "aprender",
+    "kichwa_before": null,
+    "kichwa_after": "yachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "enseñar",
+    "kichwa_before": null,
+    "kichwa_after": "yachachiy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "trabajar",
+    "kichwa_before": null,
+    "kichwa_after": "llank'ay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estudiar",
+    "kichwa_before": null,
+    "kichwa_after": "yachakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "abrir",
+    "kichwa_before": null,
+    "kichwa_after": "kichay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cerrar",
+    "kichwa_before": null,
+    "kichwa_after": "wichqay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "encender",
+    "kichwa_before": null,
+    "kichwa_after": "rikchariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "apagar",
+    "kichwa_before": null,
+    "kichwa_after": "wachay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "poner",
+    "kichwa_before": null,
+    "kichwa_after": "churay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "quitar",
+    "kichwa_before": null,
+    "kichwa_after": "qapariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ayudar",
+    "kichwa_before": null,
+    "kichwa_after": "yapay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pensar",
+    "kichwa_before": null,
+    "kichwa_after": "yuyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "querer",
+    "kichwa_before": null,
+    "kichwa_after": "munay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "amar",
+    "kichwa_before": null,
+    "kichwa_after": "kuyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "verbo",
+    "kichwa_before": null,
+    "kichwa_after": "ruwanakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "color",
+    "kichwa_before": null,
+    "kichwa_after": "llimp'i",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "blanco",
+    "kichwa_before": null,
+    "kichwa_after": "yuraq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "negro",
+    "kichwa_before": null,
+    "kichwa_after": "yana",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "rojo",
+    "kichwa_before": null,
+    "kichwa_after": "puka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "azul",
+    "kichwa_before": null,
+    "kichwa_after": "anqas",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "verde",
+    "kichwa_before": null,
+    "kichwa_after": "waylla",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "amarillo",
+    "kichwa_before": null,
+    "kichwa_after": "q'illu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "marrón",
+    "kichwa_before": null,
+    "kichwa_after": "anka",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "morado",
+    "kichwa_before": null,
+    "kichwa_after": "kulli",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "grís",
+    "kichwa_before": null,
+    "kichwa_after": "anu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-update",
+    "spanish_before": "café",
+    "spanish_after": "café",
+    "kichwa_before": "kapi",
+    "kichwa_after": "ch'umpi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "zapato",
+    "kichwa_before": null,
+    "kichwa_after": "asuta",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ropa",
+    "kichwa_before": null,
+    "kichwa_after": "pacha",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "camisa",
+    "kichwa_before": null,
+    "kichwa_after": "chumpi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pantalón",
+    "kichwa_before": null,
+    "kichwa_after": "pantalun",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "falda",
+    "kichwa_before": null,
+    "kichwa_after": "pollera",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "sombrero",
+    "kichwa_before": null,
+    "kichwa_after": "umu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cabeza",
+    "kichwa_before": null,
+    "kichwa_after": "uma",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "ojo",
+    "kichwa_before": null,
+    "kichwa_after": "ñawi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "oído",
+    "kichwa_before": null,
+    "kichwa_after": "rinri",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "nariz",
+    "kichwa_before": null,
+    "kichwa_after": "singa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "boca",
+    "kichwa_before": null,
+    "kichwa_after": "simi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "mano",
+    "kichwa_before": null,
+    "kichwa_after": "maki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "brazo",
+    "kichwa_before": null,
+    "kichwa_after": "ruku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:54Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pie",
+    "kichwa_before": null,
+    "kichwa_after": "chaqui",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "pierna",
+    "kichwa_before": null,
+    "kichwa_after": "siki",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "corazón",
+    "kichwa_before": null,
+    "kichwa_after": "shunku",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "estómago",
+    "kichwa_before": null,
+    "kichwa_after": "wiksa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "espalda",
+    "kichwa_before": null,
+    "kichwa_after": "wasa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "médico",
+    "kichwa_before": null,
+    "kichwa_after": "hamuq",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "hospital",
+    "kichwa_before": null,
+    "kichwa_after": "hampiy wasi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "medicina",
+    "kichwa_before": null,
+    "kichwa_after": "hampi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "vacuna",
+    "kichwa_before": null,
+    "kichwa_after": "hampi ruray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fiebre",
+    "kichwa_before": null,
+    "kichwa_after": "nina ukhu",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cansado",
+    "kichwa_before": null,
+    "kichwa_after": "allquy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "fuerte",
+    "kichwa_before": null,
+    "kichwa_after": "callpa",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "débil",
+    "kichwa_before": null,
+    "kichwa_after": "uchuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "contento",
+    "kichwa_before": null,
+    "kichwa_after": "kushi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "triste",
+    "kichwa_before": null,
+    "kichwa_after": "llakiy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "enojado",
+    "kichwa_before": null,
+    "kichwa_after": "pinakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "miedo",
+    "kichwa_before": null,
+    "kichwa_after": "manchakuy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "juntos",
+    "kichwa_before": null,
+    "kichwa_after": "juktawan",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "separados",
+    "kichwa_before": null,
+    "kichwa_after": "kinray",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "siéntate",
+    "kichwa_before": null,
+    "kichwa_after": "tiyay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "levántate",
+    "kichwa_before": null,
+    "kichwa_after": "hatariy",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "por aquí",
+    "kichwa_before": null,
+    "kichwa_after": "kaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "por allá",
+    "kichwa_before": null,
+    "kichwa_after": "chaypi",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "cuidado",
+    "kichwa_before": null,
+    "kichwa_after": "yupaychay",
+    "info": {
+      "source": "import-csv"
+    }
+  },
+  {
+    "timestamp": "2025-10-08T16:47:55Z",
+    "action": "bulk-add",
+    "spanish_before": null,
+    "spanish_after": "bienvenido",
+    "kichwa_before": null,
+    "kichwa_after": "alli shamuy",
+    "info": {
+      "source": "import-csv"
+    }
+  }
+]

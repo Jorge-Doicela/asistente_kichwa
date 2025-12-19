@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diccionario y Recursos Kichwa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container py-5">
+        <nav class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex align-items-center gap-3 mt-4">
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Rimaykuna" class="app-logo" width="95" height="95">
+    <div>
+        <h1 class="mb-0">Diccionario Kichwa</h1>
+        <small class="text-muted">Español ↔ Kichwa — contribuye y aprende</small>
+    </div>
+</div>
+            <div class="d-flex gap-2">
+                <a href="/" class="btn btn-outline-secondary btn-sm">Traductor</a>
+                <a href="/estudiar" class="btn btn-outline-primary btn-sm">Estudiar</a>
+            </div>
+        </nav>
+
+        <div class="row g-4">
+            <div class="col-12 col-lg-4">
+                <div class="card shadow-sm h-100 p-3">
+                    <h5 class="mb-3">Reglas y Notas</h5>
+                    <div class="accordion" id="reglasGramaticales">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pronunciacion">Pronunciación</button>
+                            </h3>
+                            <div id="pronunciacion" class="accordion-collapse collapse show" data-bs-parent="#reglasGramaticales">
+                                <div class="accordion-body">
+                                    <p>En kichwa, cada letra tiene una pronunciación específica. Ejemplos:</p>
+                                    <ul class="mb-0">
+                                        <li><strong>k:</strong> como en "casa"</li>
+                                        <li><strong>ch:</strong> como en "choza"</li>
+                                        <li><strong>sh:</strong> como en inglés "shop"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#estructura">Estructura</button>
+                            </h3>
+                            <div id="estructura" class="accordion-collapse collapse" data-bs-parent="#reglasGramaticales">
+                                <div class="accordion-body">Sujeto + Objeto + Verbo (SOV). Ej: <em>Ñuka tantata mikuni</em> (Yo pan como)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <div class="card shadow-sm p-3">
+                    <div class="position-sticky top-0 bg-white pb-2" style="z-index: 1;">
+                        <div class="d-flex align-items-center gap-2 flex-wrap" role="toolbar" aria-label="Barra de herramientas del diccionario">
+                            <div class="input-group input-group-lg flex-grow-1">
+                                <input type="text" class="form-control" id="search-dictionary" placeholder="Buscar palabra..." aria-label="Buscar en el diccionario" aria-describedby="btn-search">
+                                <button class="btn btn-outline-secondary" type="button" id="btn-search" title="Buscar">🔍</button>
+                            </div>
+                            <div class="ms-auto d-flex align-items-center gap-2 flex-wrap">
+                                <button class="btn btn-outline-primary btn-sm" id="btn-export-csv" type="button">Exportar CSV</button>
+                                <button class="btn btn-outline-secondary btn-sm" id="btn-export-json" type="button">Exportar JSON</button>
+                                <button class="btn btn-light btn-sm" id="toggle-direction" type="button" title="Intercambiar columnas">↔ Columnas</button>
+                                <button class="btn btn-outline-info btn-sm" id="btn-meta" type="button">Meta</button>
+                                <button class="btn btn-outline-dark btn-sm" id="btn-history" type="button">Historial</button>
+                                <button class="btn btn-outline-warning btn-sm" id="btn-backups" type="button">Backups</button>
+                            </div>
+                        </div>
+                        <div class="mt-2 small text-muted">Sugerencia: presiona Enter para buscar rápidamente.</div>
+                        <hr class="mt-2 mb-3">
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                        <div class="col-12 col-md-6 d-flex align-items-center gap-2">
+                            <label for="sort-by" class="form-label mb-0 small">Ordenar por</label>
+                            <select id="sort-by" class="form-select form-select-sm w-auto" aria-label="Ordenar por">
+                                <option value="spanish" selected>Español</option>
+                                <option value="kichwa">Kichwa</option>
+                            </select>
+                            <select id="sort-dir" class="form-select form-select-sm w-auto" aria-label="Dirección de orden">
+                                <option value="asc" selected>Ascendente</option>
+                                <option value="desc">Descendente</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex align-items-center gap-2 justify-content-md-end">
+                            <label for="page-size" class="form-label mb-0 small">Por página</label>
+                            <select id="page-size" class="form-select form-select-sm w-auto" aria-label="Cantidad por página">
+                                <option value="10" selected>10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 p-3">
+                        <h6 class="mb-2">Agregar nueva palabra</h6>
+                        <form id="form-new-word" class="row g-2 align-items-center">
+                            <div class="col-md-5">
+                                <input type="text" class="form-control form-control-sm" id="word-spanish" placeholder="Palabra en español" aria-label="Palabra en español" required>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control form-control-sm" id="word-kichwa" placeholder="Palabra en kichwa" aria-label="Palabra en kichwa" required>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary btn-sm w-100">Agregar</button>
+                            </div>
+                        </form>
+                        <div class="small text-muted mt-1">Consejo: añade primero en español, luego su equivalente en Kichwa.</div>
+                    </div>
+
+                    <div class="card mb-3 p-3">
+                        <h6 class="mb-2">Importar CSV</h6>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <input id="csv-file" type="file" accept=".csv" class="form-control form-control-sm" />
+                            <button id="btn-import-csv" class="btn btn-outline-primary btn-sm">Importar</button>
+                        </div>
+                        <small class="text-muted">Formato: español,kichwa</small>
+                        <div id="csv-preview" class="mt-2 small"></div>
+                        <div id="import-result" class="alert d-none mt-2"></div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped table-bordered table-sm align-middle">
+                            <thead style="position: sticky; top: 0; background: var(--bs-body-bg); z-index: 0;">
+                                <tr>
+                                    <th id="th-col-a">Español</th>
+                                    <th id="th-col-b">Kichwa</th>
+                                    <th class="text-end">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dictionary-list">
+                                <!-- dinámico -->
+                            </tbody>
+                        </table>
+                        <nav aria-label="Paginación del diccionario">
+                            <ul class="pagination justify-content-center" id="pagination"></ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/dictionary.js') }}"></script>
+
+    <!-- Modals -->
+    <div class="modal fade" id="metaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Metadatos del Diccionario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="meta-content" class="small"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="historyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Historial de Cambios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="history-content" class="small"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="backupsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Backups disponibles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="backups-content" class="small"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
